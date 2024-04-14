@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: an umbrella term
+  m_EditorClassIdentifier: 
+  word: an umbrella term
+  translate: "\u043E\u0431\u0449\u0438\u0439 \u0442\u0435\u0440\u043C\u0438\u043D"
+  audio: {fileID: 8300000, guid: 7d669891c7404f34fbd3c83b968b288b, type: 3}
+  sentences:
+  - '"Front-end" and "back-end" are _____ for different aspects of website development.'
+  - The team discussed the _____ to encompass all aspects of the project.
+  explonation: A broad or general term that encompasses various related concepts,
+    ideas, or practices within a particular field or domain.

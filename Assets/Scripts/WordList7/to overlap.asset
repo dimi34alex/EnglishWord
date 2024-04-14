@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: to overlap
+  m_EditorClassIdentifier: 
+  word: to overlap
+  translate: "\u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0432\u0430\u0442\u044C\u0441\u044F"
+  audio: {fileID: 8300000, guid: 92552491b4cbf5d4389e889f691d7c2b, type: 3}
+  sentences:
+  - The development stages often _____, requiring collaboration between different
+    teams.
+  - The designer's tasks may _____ with those of the marketing department.
+  explonation: Occurs when design elements, content, or functionalities share common
+    space or attributes within a layout or interface, potentially causing confusion
+    or inconsistency.

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: let alone
+  m_EditorClassIdentifier: 
+  word: let alone
+  translate: "\u043D\u0435 \u0433\u043E\u0432\u043E\u0440\u044F \u0443\u0436\u0435
+    \u043E"
+  audio: {fileID: 8300000, guid: ddd77d73ff61a954493db1153c43c61c, type: 3}
+  sentences:
+  - The designer carefully selected the _____ to evoke the desired brand image.
+  - The website's _____ is designed to capture users' attention and encourage exploration.
+  explonation: Indicates exclusion or impossibility, often used to emphasize that
+    a particular concept or action is even less likely or feasible than something
+    already considered difficult or unlikely.

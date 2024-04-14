@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: to come in
+  m_EditorClassIdentifier: 
+  word: to come in
+  translate: "\u043F\u043E\u044F\u0432\u043B\u044F\u0442\u044C\u0441\u044F"
+  audio: {fileID: 8300000, guid: d75cb7cf17a741441bbd3db412f7a17d, type: 3}
+  sentences:
+  - The marketing team analyzed the website's performance _____ to improve user engagement.
+  - The designer's recommendations are expected _____ during the next project meeting.
+  explonation: Refers to something that is introduced or incorporated into a design,
+    plan, or system, often to address a specific need or requirement.

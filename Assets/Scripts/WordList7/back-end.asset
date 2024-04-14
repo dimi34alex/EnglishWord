@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: back-end
+  m_EditorClassIdentifier: 
+  word: back-end
+  translate: "\u0431\u044D\u043A\u0435\u043D\u0434"
+  audio: {fileID: 8300000, guid: c86477a77c645ee45821bc4d1d7e5007, type: 3}
+  sentences:
+  - The developer's expertise includes _____ programming languages and server-side
+    technologies.
+  - Effective _____ development ensures smooth data management and website functionality.
+  explonation: Relating to the server-side aspects of a website or application, such
+    as databases, server logic, and data processing that occur behind the scenes.

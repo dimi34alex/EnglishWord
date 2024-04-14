@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: UI
+  m_EditorClassIdentifier: 
+  word: UI
+  translate: "\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439
+    \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441"
+  audio: {fileID: 8300000, guid: bd93ff7cb997ffe4aa28de2a3fa4f8eb, type: 3}
+  sentences:
+  - The website's _____ design influences user interaction and navigation.
+  - The designer focused on creating an intuitive _____ for optimal user experience.
+  explonation: Abbreviation for "User Interface," encompassing the visual elements,
+    controls, and interactive components through which users interact with a website,
+    application, or system.

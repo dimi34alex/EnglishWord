@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: clarifying
+  m_EditorClassIdentifier: 
+  word: clarifying
+  translate: "\u0443\u0442\u043E\u0447\u043D\u0435\u043D\u0438\u0435"
+  audio: {fileID: 8300000, guid: 7f9799d5f04402741ae81dee06fcee04, type: 3}
+  sentences:
+  - The purpose of the meeting was _____ the project requirements and expectations.
+  - The manager's role is _____ the team's goals and objectives.
+  explonation: In the context of web design, refers to the process of making information
+    or content clear, understandable, and easily digestible for users.

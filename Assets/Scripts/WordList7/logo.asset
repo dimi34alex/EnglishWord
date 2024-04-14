@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: logo
+  m_EditorClassIdentifier: 
+  word: logo
+  translate: "\u043B\u043E\u0433\u043E\u0442\u0438\u043F"
+  theme: 3
+  wordlist: 7
+  audio: {fileID: 8300000, guid: 2d5afe34e5319e64faa38084adc081c6, type: 3}
+  sentences:
+  - A well-crafted _____ serves as the cornerstone of a brand's identity, symbolizing
+    its values and distinguishing it from competitors in the crowded digital landscape.
+  - Designing a memorable _____ requires a blend of creativity, strategic thinking,
+    and expertise in graphic design principles.
+  explonation: A graphical representation of a brand or company used for visual identification.

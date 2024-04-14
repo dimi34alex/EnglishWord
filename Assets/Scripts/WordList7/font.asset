@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: font
+  m_EditorClassIdentifier: 
+  word: font
+  translate: "\u0448\u0440\u0438\u0444\u0442"
+  theme: 3
+  wordlist: 7
+  audio: {fileID: 8300000, guid: f871539410ff64b4ba6de6eee1ed7a42, type: 3}
+  sentences:
+  - Choosing the right _____ is a fundamental aspect of web design, as it directly
+    influences the readability and visual appeal of the content.
+  - Experimenting with different _____ allows designers to explore creative possibilities
+    and tailor the typography to match the tone and style of the website
+  explonation: The visual style and presentation of text on a webpage.

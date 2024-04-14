@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: content
+  m_EditorClassIdentifier: 
+  word: content
+  translate: "\u043A\u043E\u043D\u0442\u0435\u043D\u0442"
+  audio: {fileID: 8300000, guid: 5d90970feada7934ebd17304c954f927, type: 3}
+  sentences:
+  - Effective _____ involves creating valuable and engaging information.
+  - The marketing team is responsible for managing the website's _____.
+  explonation: Refers to the text, images, videos, or other materials presented on
+    a website or application, intended to inform, entertain, or engage users.

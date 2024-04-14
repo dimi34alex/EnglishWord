@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: color palette
+  m_EditorClassIdentifier: 
+  word: color palette
+  translate: "\u0446\u0432\u0435\u0442\u043E\u0432\u0430\u044F \u043F\u0430\u043B\u0438\u0442\u0440\u0430"
+  audio: {fileID: 8300000, guid: 00026af480d57b34884a203a49a88cb7, type: 3}
+  sentences:
+  - A cohesive _____ contributes to a visually appealing website design.
+  - The designer carefully selected the _____ to evoke the desired mood.
+  explonation: A selection of colors chosen to represent a brand, website, or design
+    project, typically consisting of primary, secondary, and accent colors for consistency
+    and visual harmony.
