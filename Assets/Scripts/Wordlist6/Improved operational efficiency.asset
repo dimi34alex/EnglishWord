@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: Improved operational efficiency
+  m_EditorClassIdentifier: 
+  word: improved operational efficiency
+  translate: "\u0443\u043B\u0443\u0447\u0448\u0435\u043D\u043D\u0430\u044F \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u043E\u043D\u043D\u0430\u044F
+    \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C"
+  audio: {fileID: 8300000, guid: 68071575eb5e9ee4284eb0ef9b3ad021, type: 3}
+  sentences:
+  - Leveraging IT solutions to automate manual processes and streamline workflows
+    can result in _____, cost savings, and better resource utilization.
+  - Implementing agile methodologies and lean practices is key to achieving _____
+    in today's dynamic business environment, enabling organizations to adapt quickly
+    to change and deliver value to customers.
+  explonation: Enhancements made to processes, workflows, or systems that result
+    in increased productivity, reduced costs, and optimized resource utilization.

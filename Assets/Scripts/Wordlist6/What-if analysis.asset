@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: What-if analysis
+  m_EditorClassIdentifier: 
+  word: What-if analysis
+  translate: "\u0430\u043D\u0430\u043B\u0438\u0437 \"\u0447\u0442\u043E-\u0435\u0441\u043B\u0438\""
+  audio: {fileID: 8300000, guid: 00e5bc8dd3718de4ba81e0877135e186, type: 3}
+  sentences:
+  - Conducting _____ allows organizations to explore various scenarios and their
+    potential outcomes, helping them make informed decisions and mitigate risks.
+  explonation: The process of exploring hypothetical scenarios or alternative outcomes
+    based on changes to variables or inputs, often used for decision-making or risk
+    assessment.

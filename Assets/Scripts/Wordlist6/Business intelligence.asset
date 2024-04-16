@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: Business intelligence
+  m_EditorClassIdentifier: 
+  word: business intelligence
+  translate: "\u0431\u0438\u0437\u043D\u0435\u0441-\u0430\u043D\u0430\u043B\u0438\u0442\u0438\u043A\u0430"
+  audio: {fileID: 8300000, guid: 16757e32f8fc1a9499ce0bc9cf321af0, type: 3}
+  sentences:
+  - _____ encompasses a set of tools, technologies, and practices for collecting,
+    integrating, and analyzing data to support business decision-making processes.
+  - Implementing a comprehensive _____ strategy allows organizations to gain a competitive
+    edge by transforming raw data into meaningful insights and actionable intelligence.
+  explonation: The use of data analysis tools and techniques to transform raw data
+    into meaningful and actionable insights for making informed business decisions.

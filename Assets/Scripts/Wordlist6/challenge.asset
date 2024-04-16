@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: challenge
+  m_EditorClassIdentifier: 
+  word: challenge
+  translate: "\u0432\u044B\u0437\u043E\u0432"
+  audio: {fileID: 8300000, guid: c60f99d400f5184469b209a242193ef8, type: 3}
+  sentences:
+  - Managing and integrating diverse IT systems across different departments can
+    pose a significant _____ to organizations, requiring careful coordination and
+    strategic planning.
+  - Adapting to rapidly evolving technology trends and innovations presents a constant
+    _____ for IT professionals, demanding continuous learning and skill development.
+  explonation: A difficult or complex problem or obstacle that needs to be overcome.

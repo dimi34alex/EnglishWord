@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: To uncover information
+  m_EditorClassIdentifier: 
+  word: to uncover information
+  translate: "\u0440\u0430\u0441\u043A\u0440\u044B\u0442\u0438\u0435 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438"
+  audio: {fileID: 8300000, guid: 8af4b4c14cf4ec64f993be9f4ac44296, type: 3}
+  sentences:
+  - _____ is a critical step in the data analysis process, allowing organizations
+    to extract valuable insights and knowledge from raw data.
+  - By employing data mining techniques and statistical algorithms, organizations
+    can effectively _____ patterns, trends, and relationships within large datasets.
+  explonation: The process of discovering or revealing insights, patterns, or knowledge
+    within data through analysis, exploration, or investigation.

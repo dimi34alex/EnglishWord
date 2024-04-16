@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: On a broad scale
+  m_EditorClassIdentifier: 
+  word: on a broad scale
+  translate: "\u0432 \u0448\u0438\u0440\u043E\u043A\u043E\u043C \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0435"
+  audio: {fileID: 8300000, guid: 98109c765a9d6f84ab3c8aa356c16d41, type: 3}
+  sentences:
+  - Implementing IT initiatives _____ requires careful planning, coordination, and
+    stakeholder engagement to ensure alignment with business objectives and strategic
+    priorities.
+  - Leveraging cloud computing and scalable infrastructure allows organizations to
+    deploy IT solutions _____, supporting global operations and enabling rapid scalability.
+  explonation: Refers to something that occurs or is applied across a wide range
+    or large area, often involving multiple departments, locations, or stakeholders.

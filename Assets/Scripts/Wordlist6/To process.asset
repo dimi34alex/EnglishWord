@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: To process
+  m_EditorClassIdentifier: 
+  word: To process
+  translate: "\u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0430"
+  audio: {fileID: 8300000, guid: 794d884b1fb8c48419dd296177f46c59, type: 3}
+  sentences:
+  - Transforming raw data into actionable insights and information requires _____
+    and analysis using specialized tools and techniques.
+  - _____ data efficiently and accurately is essential for generating meaningful
+    insights and supporting informed decision-making processes.
+  explonation: The act of transforming or manipulating raw data into a usable format
+    for analysis, storage, or presentation.
