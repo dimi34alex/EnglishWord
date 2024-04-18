@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: simplicity
+  m_EditorClassIdentifier: 
+  word: simplicity
+  translate: "\u043F\u0440\u043E\u0441\u0442\u043E\u0442\u0430"
+  audio: {fileID: 8300000, guid: 88f49783dc301494499abb1d7afbef36, type: 3}
+  sentences:
+  - Embrace _____ in design to streamline the user experience, eliminating clutter
+    and distractions that can overwhelm visitors.
+  - A _____ design aesthetic communicates elegance and sophistication, making it
+    easier for users to focus on the content and achieve their goals.
+  explonation: Design principle focused on clarity, minimalism, and ease of use to
+    enhance user experience

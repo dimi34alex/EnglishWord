@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: whitespace
+  m_EditorClassIdentifier: 
+  word: whitespace
+  translate: "\u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0441\u0442\u0432\u043E
+    \u043C\u0435\u0436\u0434\u0443 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430\u043C\u0438"
+  audio: {fileID: 8300000, guid: 9a3b7e9207b56ff489bb3e5483e3ef43, type: 3}
+  sentences:
+  - Strategic use of _____ enhances visual clarity and organization, allowing content
+    to breathe and guiding users' focus to key elements.
+  - Incorporating ample _____ around text and images creates a sense of elegance
+    and sophistication, contributing to a polished and harmonious design.
+  explonation: Blank or empty space between design elements, used to enhance readability
+    and visual clarity

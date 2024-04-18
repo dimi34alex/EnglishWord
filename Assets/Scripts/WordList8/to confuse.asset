@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: to confuse
+  m_EditorClassIdentifier: 
+  word: to confuse
+  translate: "\u0441\u0431\u0438\u0432\u0430\u0442\u044C \u0441 \u0442\u043E\u043B\u043A\u0443"
+  audio: {fileID: 8300000, guid: 887a7410f070c3d43bac70358244b82f, type: 3}
+  sentences:
+  - A cluttered layout and inconsistent navigation can _____ visitors, leading to
+    frustration and high bounce rates.
+  - Avoid overwhelming users with too much information or complex design elements
+    that may _____ their browsing experience.
+  explonation: State of being unclear or disorganized, leading to difficulty in understanding
+    or navigating a website

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: grids
+  m_EditorClassIdentifier: 
+  word: grids
+  translate: "\u0441\u0435\u0442\u043A\u0438"
+  audio: {fileID: 8300000, guid: 80dd58695debf2849b113d399a907ce4, type: 3}
+  sentences:
+  - Implementing a _____-based layout provides structure and consistency, making
+    it easier to _____ elements on the page and create a visually pleasing design.
+  - _____ offer a systematic approach to organizing content, enhancing the overall
+    _____ and usability of your website.
+  explonation: Framework or structure used to organize content and elements on a
+    webpage in a systematic manner

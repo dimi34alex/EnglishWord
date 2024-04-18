@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: still photography
+  m_EditorClassIdentifier: 
+  word: still photography
+  translate: "\u0441\u0442\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0430\u044F
+    \u0444\u043E\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u044F"
+  audio: {fileID: 8300000, guid: 36b2ef45702a558439b6a508be898883, type: 3}
+  sentences:
+  - High-quality _____ adds visual appeal and authenticity to your website, effectively
+    capturing the attention of visitors and conveying your brand's story.
+  - Thoughtfully curated _____ can evoke emotions, tell a narrative, and create a
+    memorable impression, enriching the overall user experience.
+  explonation: Static images or photographs used in website design or content

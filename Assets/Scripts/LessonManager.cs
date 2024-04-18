@@ -17,10 +17,12 @@ public class LessonManager : MonoBehaviour
     public MenuManager menuManager;
     public List<Canvas> Templates;
     public int stages;
+    public List<WordSO> WordList6;
     public List<WordSO> WordList7;
+    public List<WordSO> WordList8;
     [SerializeField] private List<Canvas> Lesson;
     public int currentStage;
-    public void GenerateLesson()
+    public void GenerateLesson(int numberwordList)
     {
         currentStage = 0;
         currentScore = 0;
@@ -30,7 +32,45 @@ public class LessonManager : MonoBehaviour
         progress.gameObject.SetActive(true);
         for (int i = 0; i < stages; i++)
         {
-            Lesson.Add(GenerateTemplate(WordList7[i]));
+            switch (numberwordList)
+            {
+                case 1:
+                {
+                    break;
+                }
+                case 2:
+                {
+                    break;
+                }
+                case 3:
+                {
+                    break;
+                }
+                case 4:
+                {
+                    break;
+                }
+                case 5:
+                {
+                    break;
+                }
+                case 6:
+                {
+                    Lesson.Add(GenerateTemplate(WordList6[i]));
+                    break;
+                }
+                case 7:
+                {
+                    Lesson.Add(GenerateTemplate(WordList7[i]));
+                    break;
+                }
+                case 8:
+                {
+                    Lesson.Add(GenerateTemplate(WordList8[i]));
+                    break;
+                }
+            }
+            
         }
         HideCanvas(Lesson);
     }

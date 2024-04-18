@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: to command attention
+  m_EditorClassIdentifier: 
+  word: to command attention
+  translate: "\u043F\u0440\u0438\u0432\u043B\u0435\u043A\u0430\u0442\u044C \u0432\u043D\u0438\u043C\u0430\u043D\u0438\u0435"
+  audio: {fileID: 8300000, guid: 029fe12475738944db5ef690901f4062, type: 3}
+  sentences:
+  - Bold visuals, vibrant colors, and dynamic animations can grab visitors' _____
+    and draw them into your website's content.
+  - Incorporate eye-catching headlines and compelling imagery to instantly _____
+    and pique curiosity, encouraging further exploration.
+  explonation: Attracting and holding the focus of users through prominent design
+    elements or engaging content

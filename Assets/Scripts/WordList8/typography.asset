@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: typography
+  m_EditorClassIdentifier: 
+  word: typography
+  translate: "\u0442\u0438\u043F\u043E\u0433\u0440\u0430\u0444\u0438\u043A\u0430"
+  audio: {fileID: 8300000, guid: 6cfdd99dd3800594f8246351b5eb26ec, type: 3}
+  sentences:
+  - Maintain _____ in design elements such as typography, color scheme, and layout
+    across all pages of your website for a unified brand experience.
+  - Building brand _____ fosters trust and familiarity with your audience, ultimately
+    strengthening your online presence and reputation.
+  explonation: Style, arrangement, and appearance of text, including fonts, sizes,
+    and spacing.

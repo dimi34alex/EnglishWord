@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: to achieve something through
+  m_EditorClassIdentifier: 
+  word: to achieve something through
+  translate: "\u0434\u043E\u0441\u0442\u0438\u0433\u0430\u0442\u044C \u0447\u0435\u0433\u043E-\u0442\u043E
+    \u0447\u0435\u0440\u0435\u0437"
+  audio: {fileID: 8300000, guid: 776805c0a4ff7ac4cbdc2432aad324d3, type: 3}
+  sentences:
+  - Set clear goals and objectives for your website to _____, whether it's increasing
+    sales, generating leads, or raising brand awareness.
+  - Continuously monitor and analyze website performance metrics to track progress
+    and identify opportunities for _____ optimization and improvement
+  explonation: Attaining specific goals or objectives using design, content, or features
+    on a website

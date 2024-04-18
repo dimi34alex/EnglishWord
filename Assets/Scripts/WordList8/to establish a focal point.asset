@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: to establish a focal point
+  m_EditorClassIdentifier: 
+  word: to establish a focal point
+  translate: "\u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C \u0430\u043A\u0446\u0435\u043D\u0442\u043D\u044B\u0439
+    \u044D\u043B\u0435\u043C\u0435\u043D\u0442"
+  audio: {fileID: 8300000, guid: 4f6904a82a7300c4896ef32de191d8f6, type: 3}
+  sentences:
+  - Use visual hierarchy techniques such as size, color, and contrast to _____, guiding
+    users' attention to the most important elements on the page.
+  - A well-defined _____ creates a sense of hierarchy and order, making it easier
+    for visitors to digest information and navigate your website.
+  explonation: Involves creating a prominent area or element on a webpage that draws
+    the user's attention and guides their focus, typically used to highlight important
+    information or key features of the website
