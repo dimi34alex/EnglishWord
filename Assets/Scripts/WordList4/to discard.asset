@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: to discard
   m_EditorClassIdentifier: 
   word: to discard
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u043E\u0442\u0431\u0440\u0430\u0441\u044B\u0432\u0430\u0442\u044C"
+  audio: {fileID: 8300000, guid: 594e551ba44eab6478b3e4f6b8e82545, type: 3}
   sentences:
   - When cleaning up a database, developers may need to _____ old or redundant data
     to free up storage space.
   - To avoid data loss, ensure you back up important information before you _____
     anything from the database.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: The act of deleting or removing data or records from a database or
+    data structure.

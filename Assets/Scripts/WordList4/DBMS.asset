@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: DBMS
   m_EditorClassIdentifier: 
   word: DBMS
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u0421\u0423\u0411\u0414"
+  audio: {fileID: 8300000, guid: 3b6e5b2e36214aa4c8c1d5ca44170c7c, type: 3}
   sentences:
   - A _____ is a software system designed to manage databases, providing tools for
     data storage, retrieval, and manipulation.
   - When choosing a _____, organizations should consider scalability, security, and
     support for complex queries.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: An acronym for Database Management System, a software system designed
+    to manage, store, and retrieve data in databases.

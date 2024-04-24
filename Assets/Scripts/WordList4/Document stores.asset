@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: Document stores
   m_EditorClassIdentifier: 
   word: Document stores
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u0425\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0430 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u043E\u0432"
+  audio: {fileID: 8300000, guid: a5d0d06b44fa4a849be635d48c1e0687, type: 3}
   sentences:
   - In NoSQL databases, _____ store data in a document-like format, allowing for
     flexible schema design and easy scalability.
   - Popular _____ like MongoDB and CouchDB are widely used in modern application
     development.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: A type of NoSQL database that stores data in document-like formats,
+    allowing flexible schemas and scalability.

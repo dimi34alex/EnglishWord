@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: a table
   m_EditorClassIdentifier: 
   word: a table
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u0442\u0430\u0431\u043B\u0438\u0446\u0430"
+  audio: {fileID: 8300000, guid: 1ef11b8b62501944085b1b708d6179b3, type: 3}
   sentences:
   - In relational databases, data is organized into _____, with each row representing
     a record and each column representing a field.
   - Creating a new _____ requires specifying the appropriate columns, data types,
     and constraints to maintain data integrity.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: A structured data format where information is organized into rows
+    and columns, commonly used in databases.

@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: a file cabinet
   m_EditorClassIdentifier: 
   word: a file cabinet
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u043A\u0430\u0440\u0442\u043E\u0442\u0435\u043A\u0430"
+  audio: {fileID: 8300000, guid: 5a9ce749606fe1a4fb55be437d9ef87b, type: 3}
   sentences:
   - In older systems, documents were often stored in a physical _____, but modern
     systems use digital storage solutions.
   - To improve organization and accessibility, companies are replacing the traditional
     _____ with electronic document management systems.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: A physical or digital storage system used to organize and store files
+    and documents in a structured manner.

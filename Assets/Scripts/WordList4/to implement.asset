@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: to implement
   m_EditorClassIdentifier: 
   word: to implement
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u0440\u0435\u0430\u043B\u0438\u0437\u043E\u0432\u0430\u0442\u044C"
+  audio: {fileID: 8300000, guid: 3f127fff81688e342a2f7d1be32c1ff1, type: 3}
   sentences:
   - Developers need to _____ proper security measures to protect sensitive data in
     the database.
   - When deploying a new feature, you must carefully _____ the code to avoid bugs
     and ensure reliability.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: The process of integrating or applying specific features, functionalities,
+    or security measures within a system or application.

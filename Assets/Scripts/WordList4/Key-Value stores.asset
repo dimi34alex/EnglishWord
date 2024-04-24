@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Key-Value stores
   m_EditorClassIdentifier: 
   word: Key-Value stores
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0446\u0430 \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0439
+    \u043A\u043B\u044E\u0447\u0435\u0439"
+  audio: {fileID: 8300000, guid: a2bb9a48aaebe834fbbecbb0661c1239, type: 3}
   sentences:
   - A _____ stores data as key-value pairs, providing fast retrieval based on unique
     keys.
   - Applications that require high-speed data access and scalability often use _____
     for their simplicity and efficiency.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: A NoSQL database structure that stores data as key-value pairs, allowing
+    fast retrieval based on unique keys.

@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: rows and columns
   m_EditorClassIdentifier: 
   word: rows and columns
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u0441\u0442\u0440\u043E\u043A\u0438 \u0438 \u0441\u0442\u043E\u043B\u0431\u0446\u044B"
+  audio: {fileID: 8300000, guid: 8c239f959e81e6947aca538c77b3a841, type: 3}
   sentences:
   - In a database, data is stored in _____, with rows representing individual records
     and columns representing attributes.
   - When querying a table, developers often select specific _____ to narrow down
     the data for analysis.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: The structure used in tables within relational databases, where rows
+    represent individual records, and columns represent attributes.

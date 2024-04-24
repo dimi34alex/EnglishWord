@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: a foreign key
   m_EditorClassIdentifier: 
   word: a foreign key
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u0441\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u0439 \u043A\u043B\u044E\u0447"
+  audio: {fileID: 8300000, guid: 4a3642b1ed3b40c4da750906249c7759, type: 3}
   sentences:
   - To establish relationships between tables in a relational database, a _____ is
     often used to ensure data integrity.
   - Database administrators use _____ to enforce referential integrity and maintain
     consistent data structures.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: A foreign key creates a relationship between two tables by referencing
+    the primary key in another table.

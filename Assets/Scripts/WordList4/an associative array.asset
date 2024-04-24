@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: an associative array
   m_EditorClassIdentifier: 
   word: an associative array
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u0430\u0441\u0441\u043E\u0446\u0438\u0430\u0442\u0438\u0432\u043D\u044B\u0439
+    \u043C\u0430\u0441\u0441\u0438\u0432"
+  audio: {fileID: 8300000, guid: 0533f3659dc0b874facae93b4400fd27, type: 3}
   sentences:
   - An _____, also known as a dictionary, maps unique keys to corresponding values,
     allowing for fast data retrieval.
   - Many programming languages support _____ as a fundamental data structure for
     efficient data manipulation.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: A data structure that maps keys to corresponding values, allowing
+    fast retrieval based on the key.

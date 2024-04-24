@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: an opaque
   m_EditorClassIdentifier: 
   word: an opaque
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u043D\u0435\u043F\u0440\u043E\u0437\u0440\u0430\u0447\u043D\u044B\u0439"
+  audio: {fileID: 8300000, guid: cd37fbeb24a8e974e91391ffa1ed2013, type: 3}
   sentences:
   - When a database stores complex data types in an _____ format, additional processing
     may be required to extract meaningful information.
   - Certain file formats are considered _____ because they do not reveal their internal
     structure or content at a glance.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: A term used to describe a data format or object that is not easily
+    interpretable or lacks transparency.

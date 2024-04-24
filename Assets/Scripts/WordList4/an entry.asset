@@ -13,13 +13,11 @@ MonoBehaviour:
   m_Name: an entry
   m_EditorClassIdentifier: 
   word: an entry
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
+  translate: "\u0437\u0430\u043F\u0438\u0441\u044C"
   audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
   sentences:
   - Adding a new _____ to a database requires an insert operation, which places data
     into the correct location.
   - Before inserting an _____, developers should validate the data to ensure compliance
     with database constraints.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: A single record or data point in a database or data structure.

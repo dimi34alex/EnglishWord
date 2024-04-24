@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: to keep track
   m_EditorClassIdentifier: 
   word: to keep track
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u043E\u0442\u0441\u043B\u0435\u0436\u0438\u0432\u0430\u0442\u044C"
+  audio: {fileID: 8300000, guid: 789fb6c69108a62498368f636deb0463, type: 3}
   sentences:
   - Logging systems help _____ of changes made to a database, allowing for auditing
     and troubleshooting.
   - Developers often use version control tools to _____ of code changes during the
     development process.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: Refers to maintaining a record or history of changes or events within
+    a system.

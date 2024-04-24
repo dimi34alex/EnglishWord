@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: associated toolsets
   m_EditorClassIdentifier: 
   word: associated toolsets
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u0430\u0441\u0441\u043E\u0446\u0438\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435
+    \u043D\u0430\u0431\u043E\u0440\u044B \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u043E\u0432"
+  audio: {fileID: 8300000, guid: 742ea6295bf7886448448395f3cc76a8, type: 3}
   sentences:
   - Database administrators rely on _____ to manage, monitor, and optimize database
     performance effectively.
   - Choosing the right _____ can streamline database operations and reduce administrative
     overhead.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: A collection of software tools and utilities designed to work together
+    for a specific purpose, such as database management or software development.

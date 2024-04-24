@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: Column-oriented database
   m_EditorClassIdentifier: 
   word: Column-oriented database
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u043E\u0440\u0438\u0435\u043D\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u0430\u044F
+    \u043D\u0430 \u0441\u0442\u043E\u043B\u0431\u0446\u044B \u0431\u0430\u0437\u0430
+    \u0434\u0430\u043D\u043D\u044B\u0445"
+  audio: {fileID: 8300000, guid: a95963db87e8bf446ba0bd1fec1573f7, type: 3}
   sentences:
   - A _____ stores data in columns instead of rows, allowing for faster analytical
     queries and compression.
   - Businesses often use a _____ for data warehousing and business intelligence applications
     due to its efficiency in handling large datasets.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: A database structure where data is stored in columns rather than rows,
+    enabling efficient analytical queries and data compression.

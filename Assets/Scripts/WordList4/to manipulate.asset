@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: to manipulate
   m_EditorClassIdentifier: 
   word: to manipulate
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u0443\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C"
+  audio: {fileID: 8300000, guid: d1b79491ccc1d144cb8e8fce8fc867e5, type: 3}
   sentences:
   - SQL allows you to _____ data in various ways, such as updating records, deleting
     rows, and changing values.
   - Developers use SQL queries to _____ large datasets, extracting specific information
     or updating attributes.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: The process of altering, updating, or modifying data within a database
+    or data structure.

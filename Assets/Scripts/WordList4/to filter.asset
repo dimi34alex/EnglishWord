@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: to filter
   m_EditorClassIdentifier: 
   word: to filter
-  translate: "\u0432\u0438\u0440\u0443\u0441\u043D\u043E\u0435 \u0432\u0438\u0434\u0435\u043E"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  translate: "\u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432\u0430\u0442\u044C"
+  audio: {fileID: 8300000, guid: 50ec82cdb971c524ab2ffc4616c774b6, type: 3}
   sentences:
   - SQL queries often _____ data using WHERE clauses to retrieve only the records
     that meet specific conditions.
   - Effective use of indexes can improve performance when you need to _____ large
     datasets.
-  explonation: A specific communication endpoint on a computer or network device
-    that is reserved for a particular service or application, either by default or
-    by administrator configuration.
+  explonation: The process of narrowing down data based on specific conditions or
+    predicates in a query.
