@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: To manage data through a command line interface
+  m_EditorClassIdentifier: 
+  word: To manage data through a command line interface
+  translate: "\u0443\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C \u0434\u0430\u043D\u043D\u044B\u043C\u0438
+    \u0447\u0435\u0440\u0435\u0437 \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441
+    \u043A\u043E\u043C\u0430\u043D\u0434\u043D\u043E\u0439 \u0441\u0442\u0440\u043E\u043A\u0438"
+  audio: {fileID: 8300000, guid: b198677cbb768644ba112aaf07d2cabb, type: 3}
+  sentences:
+  - Experienced administrators prefer to _____ as it offers greater control and flexibility
+    for performing advanced database tasks.
+  - _____ allows administrators to script repetitive tasks and automate routine maintenance
+    activities.
+  explonation: To perform data management tasks, such as querying, updating, or administering
+    databases, using command-line tools or utilities instead of graphical user interfaces
+    (GUIs).

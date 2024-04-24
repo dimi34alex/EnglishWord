@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: Elastic stack
+  m_EditorClassIdentifier: 
+  word: Elastic stack
+  translate: "\u0433\u0438\u0431\u043A\u0438\u0439 \u0441\u0442\u044D\u043A"
+  audio: {fileID: 8300000, guid: 4341a29353fb4174e92d1270e64ef0ad, type: 3}
+  sentences:
+  - Leveraging advanced IT systems can provide a significant _____ to businesses
+    by enhancing productivity, streamlining operations, and reducing costs.
+  - Implementing robust cybersecurity measures is not only a necessity but also a
+    _____ to safeguard sensitive data and protect against potential threats.
+  explonation: A collection of open-source software tools developed by Elastic for
+    ingesting, storing, searching, and visualizing data in real-time, commonly used
+    for log and event data analysis.

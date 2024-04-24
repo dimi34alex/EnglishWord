@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: A potential entry port
+  m_EditorClassIdentifier: 
+  word: A potential entry port
+  translate: "\u043F\u043E\u0440\u0442 \u043F\u043E\u0442\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0433\u043E
+    \u0432\u0445\u043E\u0434\u0430"
+  audio: {fileID: 8300000, guid: c0a4968ac75910543baa301d86f2b309, type: 3}
+  sentences:
+  - Attackers often target services running on _____ as they can be vulnerable to
+    exploitation if not properly secured.
+  - Monitoring network traffic can help identify suspicious activity on _____, indicating
+    possible intrusion attempts.
+  explonation: A network port or service that could serve as a point of entry for
+    unauthorized access or attacks by hackers or malicious actors.

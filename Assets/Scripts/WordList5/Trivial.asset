@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: Trivial
+  m_EditorClassIdentifier: 
+  word: Trivial
+  translate: "\u0442\u0440\u0438\u0432\u0438\u0430\u043B\u044C\u043D\u044B\u0439"
+  audio: {fileID: 8300000, guid: 1b6128d20bde8ad41961d6e19e9cffc6, type: 3}
+  sentences:
+  - Setting up a basic database server is _____, but optimizing performance and securing
+    data require careful planning and configuration.
+  - The new software update includes several _____ bug fixes and minor improvements
+    to enhance user experience.
+  explonation: Describing a task, problem, or issue that is straightforward, simple,
+    or easy to solve, often requiring minimal effort, expertise, or resources.

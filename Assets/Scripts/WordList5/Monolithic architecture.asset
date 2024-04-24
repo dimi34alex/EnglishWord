@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: Monolithic architecture
+  m_EditorClassIdentifier: 
+  word: Monolithic architecture
+  translate: "\u043C\u043E\u043D\u043E\u043B\u0438\u0442\u043D\u0430\u044F \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u0443\u0440\u0430"
+  audio: {fileID: 8300000, guid: 1b48d1f02f8684e47841990e60c0b82f, type: 3}
+  sentences:
+  - In a _____, all components of an application are tightly coupled into a single
+    codebase and deployed as a single unit.
+  - While a _____ simplifies development and deployment, it can lead to challenges
+    with scalability and maintenance as the application grows.
+  explonation: An architectural design approach in which all components of a software
+    application are tightly coupled and packaged together as a single unit, typically
+    deployed on a single server or platform.

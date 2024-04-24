@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: To configure
+  m_EditorClassIdentifier: 
+  word: To configure
+  translate: "\u043D\u0430\u0441\u0442\u0440\u043E\u0438\u0442\u044C"
+  audio: {fileID: 8300000, guid: d141a6b1e6576df4a961fd979c90a19d, type: 3}
+  sentences:
+  - Before deploying the application, developers need to _____ the database connection
+    settings to ensure proper communication.
+  - The system administrator can _____ firewall rules to restrict access to specific
+    ports and IP addresses.
+  explonation: To set up or adjust the settings, parameters, or options of a software
+    application, device, or system according to specific requirements or preferences.

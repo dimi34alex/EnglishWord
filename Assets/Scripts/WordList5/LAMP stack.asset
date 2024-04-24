@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: LAMP stack
+  m_EditorClassIdentifier: 
+  word: LAMP stack
+  translate: "\u0441\u0442\u044D\u043A LAMP"
+  audio: {fileID: 8300000, guid: 6d724d8f7eab6884b93af0221313b184, type: 3}
+  sentences:
+  - The _____, consisting of Linux, Apache, MySQL, and PHP, is a popular choice for
+    building dynamic web applications.
+  - Setting up a development environment with a _____ allows developers to quickly
+    prototype and deploy web applications.
+  explonation: An acronym for Linux, Apache, MySQL, and PHP, representing a popular
+    open-source software stack used for developing and deploying dynamic web applications.

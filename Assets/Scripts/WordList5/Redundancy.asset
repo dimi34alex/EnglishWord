@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: Redundancy
+  m_EditorClassIdentifier: 
+  word: Redundancy
+  translate: "\u0438\u0437\u0431\u044B\u0442\u043E\u0447\u043D\u043E\u0441\u0442\u044C"
+  audio: {fileID: 8300000, guid: ca98b698d54426649b936857224ff82a, type: 3}
+  sentences:
+  - Implementing data _____ ensures high availability and fault tolerance by replicating
+    data across multiple servers or data centers.
+  - By incorporating _____ into their infrastructure, organizations can minimize
+    downtime and mitigate the risk of data loss.
+  explonation: The duplication or replication of critical components, systems, or
+    data within a computer or network infrastructure to ensure reliability, fault
+    tolerance, and high availability.
