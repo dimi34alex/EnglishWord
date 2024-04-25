@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   word: logo
   translate: "\u043B\u043E\u0433\u043E\u0442\u0438\u043F"
-  theme: 3
-  wordlist: 7
   audio: {fileID: 8300000, guid: 2d5afe34e5319e64faa38084adc081c6, type: 3}
   sentences:
   - A well-crafted _____ serves as the cornerstone of a brand's identity, symbolizing
@@ -23,3 +21,4 @@ MonoBehaviour:
   - Designing a memorable _____ requires a blend of creativity, strategic thinking,
     and expertise in graphic design principles.
   explonation: A graphical representation of a brand or company used for visual identification.
+  wordList: 7

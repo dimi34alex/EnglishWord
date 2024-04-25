@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
   m_Name: To uncover information
   m_EditorClassIdentifier: 
-  word: to uncover information
+  word: To uncover information
   translate: "\u0440\u0430\u0441\u043A\u0440\u044B\u0442\u0438\u0435 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438"
   audio: {fileID: 8300000, guid: 8af4b4c14cf4ec64f993be9f4ac44296, type: 3}
   sentences:
@@ -22,3 +22,4 @@ MonoBehaviour:
     can effectively _____ patterns, trends, and relationships within large datasets.
   explonation: The process of discovering or revealing insights, patterns, or knowledge
     within data through analysis, exploration, or investigation.
+  wordList: 6

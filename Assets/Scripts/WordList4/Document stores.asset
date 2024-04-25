@@ -22,3 +22,4 @@ MonoBehaviour:
     development.
   explonation: A type of NoSQL database that stores data in document-like formats,
     allowing flexible schemas and scalability.
+  wordList: 4

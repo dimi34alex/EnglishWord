@@ -22,3 +22,4 @@ MonoBehaviour:
     and constraints to maintain data integrity.
   explonation: A structured data format where information is organized into rows
     and columns, commonly used in databases.
+  wordList: 4

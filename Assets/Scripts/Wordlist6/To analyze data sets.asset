@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
   m_Name: To analyze data sets
   m_EditorClassIdentifier: 
-  word: to analyze data sets
+  word: To analyze data sets
   translate: "\u0430\u043D\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u0442\u044C
     \u043D\u0430\u0431\u043E\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445"
   audio: {fileID: 8300000, guid: 0c3aa438053d1764a8ef30e86e9c5ec4, type: 3}
@@ -23,3 +23,4 @@ MonoBehaviour:
     _____ and extract valuable insights from large and diverse datasets.
   explonation: The process of examining and interpreting data collections to identify
     patterns, trends, or insights that can inform decision-making or problem-solving.
+  wordList: 6

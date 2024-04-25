@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
   m_Name: To be deployed on premises
   m_EditorClassIdentifier: 
-  word: to be deployed on premises
+  word: To be deployed on premises
   translate: "\u0440\u0430\u0437\u0432\u0435\u0440\u0442\u044B\u0432\u0430\u043D\u0438\u0435
     \u043D\u0430 \u043C\u0435\u0441\u0442\u0435"
   audio: {fileID: 8300000, guid: fa3c0e2105a77ac479e3b20517b5b947, type: 3}
@@ -24,3 +24,4 @@ MonoBehaviour:
   explonation: Refers to software applications or systems that are installed and
     operated within an organization's physical infrastructure or data center, rather
     than being hosted in the cloud or on external servers.
+  wordList: 6

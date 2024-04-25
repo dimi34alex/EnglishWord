@@ -22,3 +22,4 @@ MonoBehaviour:
     and query optimization techniques.
   explonation: Specific parts of a structured query that define conditions, filters,
     or operations to perform on data.
+  wordList: 4

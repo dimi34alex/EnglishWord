@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
   m_Name: Streaming analytics applications
   m_EditorClassIdentifier: 
-  word: streaming analytics applications
+  word: Streaming analytics applications
   translate: "\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043F\u043E\u0442\u043E\u043A\u043E\u0432\u043E\u0439
     \u0430\u043D\u0430\u043B\u0438\u0442\u0438\u043A\u0438"
   audio: {fileID: 8300000, guid: b9c43ed777866e04ba91794efd47f54c, type: 3}
@@ -23,3 +23,4 @@ MonoBehaviour:
     and optimize operations in dynamic and fast-paced environments.
   explonation: Software systems or tools that process and analyze real-time data
     streams to gain immediate insights and take proactive actions.
+  wordList: 6

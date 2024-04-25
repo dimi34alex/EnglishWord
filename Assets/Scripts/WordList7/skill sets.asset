@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   word: skill sets
   translate: "\u043D\u0430\u0431\u043E\u0440 \u0443\u043C\u0435\u043D\u0438\u0439"
-  theme: 3
-  wordlist: 7
   audio: {fileID: 8300000, guid: 06c7c1fe2f25a8340a918a3c525b34f5, type: 3}
   sentences:
   - Developing a diverse range of _____, including coding, graphic design, and user
@@ -25,3 +23,4 @@ MonoBehaviour:
     technologies is crucial for staying competitive in the ever-evolving field of
     web design.
   explonation: Diverse abilities and expertise required for effective web design.
+  wordList: 7

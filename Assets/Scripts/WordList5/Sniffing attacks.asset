@@ -23,3 +23,4 @@ MonoBehaviour:
   explonation: Malicious activities in which attackers intercept and capture network
     traffic to eavesdrop on sensitive information, such as passwords, authentication
     credentials, or confidential data.
+  wordList: 5

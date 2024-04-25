@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
   m_Name: Hidden patterns
   m_EditorClassIdentifier: 
-  word: hidden patterns
+  word: Hidden patterns
   translate: "\u0441\u043A\u0440\u044B\u0442\u044B\u0435 \u0448\u0430\u0431\u043B\u043E\u043D\u044B"
   audio: {fileID: 8300000, guid: c30dd19d5c694924599c31dd3b9f54b7, type: 3}
   sentences:
@@ -23,3 +23,4 @@ MonoBehaviour:
     performance and innovation.
   explonation: Trends, relationships, or correlations within data that are not immediately
     apparent but can be revealed through data analysis and exploration.
+  wordList: 6

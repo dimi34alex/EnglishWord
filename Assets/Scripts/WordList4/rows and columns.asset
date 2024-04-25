@@ -22,3 +22,4 @@ MonoBehaviour:
     the data for analysis.
   explonation: The structure used in tables within relational databases, where rows
     represent individual records, and columns represent attributes.
+  wordList: 4

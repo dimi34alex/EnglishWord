@@ -23,3 +23,4 @@ MonoBehaviour:
   explonation: An architectural design approach in which all components of a software
     application are tightly coupled and packaged together as a single unit, typically
     deployed on a single server or platform.
+  wordList: 5
