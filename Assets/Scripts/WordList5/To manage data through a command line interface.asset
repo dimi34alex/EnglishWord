@@ -25,3 +25,4 @@ MonoBehaviour:
   explonation: To perform data management tasks, such as querying, updating, or administering
     databases, using command-line tools or utilities instead of graphical user interfaces
     (GUIs).
+  wordList: 5

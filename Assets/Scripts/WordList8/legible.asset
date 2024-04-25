@@ -22,3 +22,4 @@ MonoBehaviour:
     and screen sizes for a seamless reading experience.  '
   explonation: The readability and clarity of text, ensuring that fonts are easy
     to read and understand for users
+  wordList: 8

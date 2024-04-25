@@ -23,3 +23,4 @@ MonoBehaviour:
     for their simplicity and efficiency.
   explonation: A NoSQL database structure that stores data as key-value pairs, allowing
     fast retrieval based on unique keys.
+  wordList: 4

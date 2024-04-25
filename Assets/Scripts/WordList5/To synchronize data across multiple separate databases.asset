@@ -26,3 +26,4 @@ MonoBehaviour:
   explonation: To ensure consistency and coherence between data stored in different
     database instances or locations by replicating changes and updates in real-time
     or at scheduled intervals.
+  wordList: 5

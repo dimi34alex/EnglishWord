@@ -17,6 +17,11 @@ public class LessonManager : MonoBehaviour
     public MenuManager menuManager;
     public List<Canvas> Templates;
     public int stages;
+    public List<WordSO> WordList1;
+    public List<WordSO> WordList2;
+    public List<WordSO> WordList3;
+    public List<WordSO> WordList4;
+    public List<WordSO> WordList5;
     public List<WordSO> WordList6;
     public List<WordSO> WordList7;
     public List<WordSO> WordList8;
@@ -35,42 +40,47 @@ public class LessonManager : MonoBehaviour
             switch (numberwordList)
             {
                 case 1:
-                {
-                    break;
-                }
+                    {
+                        Lesson.Add(GenerateTemplate(WordList1[i]));
+                        break;
+                    }
                 case 2:
-                {
-                    break;
-                }
+                    {
+                        Lesson.Add(GenerateTemplate(WordList2[i]));
+                        break;
+                    }
                 case 3:
-                {
-                    break;
-                }
+                    {
+                        Lesson.Add(GenerateTemplate(WordList3[i]));
+                        break;
+                    }
                 case 4:
-                {
-                    break;
-                }
+                    {
+                        Lesson.Add(GenerateTemplate(WordList4[i]));
+                        break;
+                    }
                 case 5:
-                {
-                    break;
-                }
+                    {
+                        Lesson.Add(GenerateTemplate(WordList5[i]));
+                        break;
+                    }
                 case 6:
-                {
-                    Lesson.Add(GenerateTemplate(WordList6[i]));
-                    break;
-                }
+                    {
+                        Lesson.Add(GenerateTemplate(WordList6[i]));
+                        break;
+                    }
                 case 7:
-                {
-                    Lesson.Add(GenerateTemplate(WordList7[i]));
-                    break;
-                }
+                    {
+                        Lesson.Add(GenerateTemplate(WordList7[i]));
+                        break;
+                    }
                 case 8:
-                {
-                    Lesson.Add(GenerateTemplate(WordList8[i]));
-                    break;
-                }
+                    {
+                        Lesson.Add(GenerateTemplate(WordList8[i]));
+                        break;
+                    }
             }
-            
+
         }
         HideCanvas(Lesson);
     }
@@ -122,7 +132,7 @@ public class LessonManager : MonoBehaviour
                 {
                     return GenerateSentence(word);
                 }
-                case 4:
+            case 4:
                 {
                     return GenerateExplonation(word);
                 }
@@ -134,7 +144,7 @@ public class LessonManager : MonoBehaviour
 
     }
 
-private Canvas GenerateExplonation(WordSO word)
+    private Canvas GenerateExplonation(WordSO word)
     {
         Canvas template = Instantiate(Templates[4]);
         List<string> uniqueTranslates = new List<string>();
@@ -149,16 +159,7 @@ private Canvas GenerateExplonation(WordSO word)
             {
                 buttons.Add(child.GetComponent<Button>());
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
-                string translate = WordList7[Random.Range(0, WordList7.Count)].word;
-                while (translate == word.word || uniqueTranslates.Contains(translate))
-                {
-                    translate = WordList7[Random.Range(0, WordList7.Count)].word;
-                }
-                if (!uniqueTranslates.Contains(translate))
-                {
-                    text.text = translate;
-                    uniqueTranslates.Add(text.text);
-                }
+                RandomWords(word.wordList, word, text);
                 child.GetComponent<Button>().onClick.AddListener(() => NextStage(text.text, word));
             }
         }
@@ -185,16 +186,7 @@ private Canvas GenerateExplonation(WordSO word)
             {
                 buttons.Add(child.GetComponent<Button>());
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
-                string translate = WordList7[Random.Range(0, WordList7.Count)].word;
-                while (translate == word.word || uniqueTranslates.Contains(translate))
-                {
-                    translate = WordList7[Random.Range(0, WordList7.Count)].word;
-                }
-                if (!uniqueTranslates.Contains(translate))
-                {
-                    text.text = translate;
-                    uniqueTranslates.Add(text.text);
-                }
+                RandomWords(word.wordList, word, text);
                 child.GetComponent<Button>().onClick.AddListener(() => NextStage(text.text, word));
             }
         }
@@ -222,16 +214,7 @@ private Canvas GenerateExplonation(WordSO word)
             {
                 buttons.Add(child.GetComponent<Button>());
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
-                string translate = WordList7[Random.Range(0, WordList7.Count)].word;
-                while (translate == word.word || uniqueTranslates.Contains(translate))
-                {
-                    translate = WordList7[Random.Range(0, WordList7.Count)].word;
-                }
-                if (!uniqueTranslates.Contains(translate))
-                {
-                    text.text = translate;
-                    uniqueTranslates.Add(text.text);
-                }
+                RandomWords(word.wordList, word, text);
                 child.GetComponent<Button>().onClick.AddListener(() => NextStage(text.text, word));
             }
         }
@@ -257,16 +240,7 @@ private Canvas GenerateExplonation(WordSO word)
             {
                 buttons.Add(child.GetComponent<Button>());
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
-                string translate = WordList7[Random.Range(0, WordList7.Count)].translate;
-                while (translate == word.translate || uniqueTranslates.Contains(translate))
-                {
-                    translate = WordList7[Random.Range(0, WordList7.Count)].translate;
-                }
-                if (!uniqueTranslates.Contains(translate))
-                {
-                    text.text = translate;
-                    uniqueTranslates.Add(text.text);
-                }
+                RandomWords(word.wordList, word, text, true);
                 child.GetComponent<Button>().onClick.AddListener(() => NextStage(text.text, word));
             }
         }
@@ -293,15 +267,7 @@ private Canvas GenerateExplonation(WordSO word)
                 buttons.Add(child.GetComponent<Button>());
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
                 string translate = WordList7[Random.Range(0, WordList7.Count)].word;
-                while (translate == word.word || uniqueTranslates.Contains(translate))
-                {
-                    translate = WordList7[Random.Range(0, WordList7.Count)].word;
-                }
-                if (!uniqueTranslates.Contains(translate))
-                {
-                    text.text = translate;
-                    uniqueTranslates.Add(text.text);
-                }
+                RandomWords(word.wordList, word, text);
                 child.GetComponent<Button>().onClick.AddListener(() => NextStage(text.text, word));
             }
         }
@@ -353,5 +319,87 @@ private Canvas GenerateExplonation(WordSO word)
                 }
             }
         }
+    }
+    private void RandomWords(int wordlist, WordSO word, TextMeshProUGUI text, bool russian = false)
+    {
+        List<string> uniqueTranslates = new List<string>();
+        string translate;
+        if (russian)
+        {
+            translate = GenerateRandomWord(wordlist).translate;
+            while (translate == word.translate || uniqueTranslates.Contains(translate))
+            {
+                translate = GenerateRandomWord(wordlist).translate;
+            }
+        }
+        else
+        {
+            translate = GenerateRandomWord(wordlist).word;
+            while (translate == word.word || uniqueTranslates.Contains(translate))
+            {
+                translate = GenerateRandomWord(wordlist).word;
+            }
+        }
+
+        if (!uniqueTranslates.Contains(translate))
+        {
+            text.text = translate;
+            uniqueTranslates.Add(text.text);
+        }
+    }
+    private WordSO GenerateRandomWord(int wordlist)
+    {
+        
+        WordSO translate;
+        switch (wordlist)
+        {
+            case 1:
+                {
+                    translate = WordList1[Random.Range(0, WordList1.Count)];
+                    break;
+                }
+            case 2:
+                {
+                    translate = WordList2[Random.Range(0, WordList2.Count)];
+                    break;
+                }
+            case 3:
+                {
+                    translate = WordList3[Random.Range(0, WordList3.Count)];
+                    break;
+                }
+            case 4:
+                {
+                    translate = WordList4[Random.Range(0, WordList4.Count)];
+                    break;
+                }
+            case 5:
+                {
+                    translate = WordList5[Random.Range(0, WordList5.Count)];
+                    break;
+                }
+            case 6:
+                {
+                    translate = WordList6[Random.Range(0, WordList6.Count)];
+                    break;
+                }
+            case 7:
+                {
+                    translate = WordList7[Random.Range(0, WordList7.Count)];
+                    break;
+                }
+            case 8:
+                {
+                    translate = WordList8[Random.Range(0, WordList8.Count)];
+                    break;
+                }
+            default:
+                {
+                    translate = null;
+                    break;
+                }
+
+        }
+        return translate;
     }
 }

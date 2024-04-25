@@ -25,8 +25,8 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SubtractiveShadowColor: {r: 1, g: 1, b: 1, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 3d8fd3e51ebfc9d43b1f0a59586d87cf, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 5878b6ca8f92b5d488f0afb00e3fdb82, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -764,7 +764,69 @@ MonoBehaviour:
   - {fileID: 4780536749551180910, guid: b4d0886b291f46543aa657828ffdc66f, type: 3}
   - {fileID: 4780536749551180910, guid: 2d96672bf47dea54b9cb2bc571e3712b, type: 3}
   - {fileID: 4780536749551180910, guid: 2f8695ca9ae3aa841b7a34239073801a, type: 3}
-  stages: 25
+  stages: 20
+  WordList1: []
+  WordList2: []
+  WordList3: []
+  WordList4:
+  - {fileID: 11400000, guid: 72b8200faaa10914e87456cf95c58951, type: 2}
+  - {fileID: 11400000, guid: f4d61ab402249464b96c300fda35a721, type: 2}
+  - {fileID: 11400000, guid: a6bef241a15512546bc7f4879972c241, type: 2}
+  - {fileID: 11400000, guid: 76b94fb16cf2abd4dbbee54422886890, type: 2}
+  - {fileID: 11400000, guid: c73d3f534c027694b833207700d180fb, type: 2}
+  - {fileID: 11400000, guid: 2e4a129a1b7cc68418f409b6c7f25f64, type: 2}
+  - {fileID: 11400000, guid: 827a23a7759dc704985926b5a4c4ad32, type: 2}
+  - {fileID: 11400000, guid: 62cadbb6ae01be440b1fc9f70ba68469, type: 2}
+  - {fileID: 11400000, guid: 7d0f69e7ffedd4543a145fbbd709bfb4, type: 2}
+  - {fileID: 11400000, guid: 02082aceaa4547a4b867c1601736d2f7, type: 2}
+  - {fileID: 11400000, guid: ed3afe87ce224674ca164a795550a35b, type: 2}
+  - {fileID: 11400000, guid: 40c48d732b581db46ad33f8f3beca082, type: 2}
+  - {fileID: 11400000, guid: cf0e5d04330cd5744b3621965ecfa993, type: 2}
+  - {fileID: 11400000, guid: 6db082689bc9fc045bef175bdfdbcd8f, type: 2}
+  - {fileID: 11400000, guid: 46d48258b17344344915269c305a4240, type: 2}
+  - {fileID: 11400000, guid: 7b78b4daa52ed5e46b422461178e5583, type: 2}
+  - {fileID: 11400000, guid: c7b2a086fd9baa848916d72cba7446a2, type: 2}
+  - {fileID: 11400000, guid: cae8acf720b84504b974fcc6960fb5a5, type: 2}
+  - {fileID: 11400000, guid: 6e793bd55afeceb4ba5fa4f2983911dc, type: 2}
+  - {fileID: 11400000, guid: 337d86b61159e874caa5e31b76c7af13, type: 2}
+  - {fileID: 11400000, guid: b0487de18a56fb748b39d61c5920000e, type: 2}
+  - {fileID: 11400000, guid: 7f525a08a54e2fb43b0323c49c1e8916, type: 2}
+  - {fileID: 11400000, guid: 9e525d080a110264790d08283546ad62, type: 2}
+  - {fileID: 11400000, guid: 20120a17316293a4aa62efc47bdcf5ef, type: 2}
+  - {fileID: 11400000, guid: faefd707425b77147a9a951676dc8c3b, type: 2}
+  - {fileID: 11400000, guid: 8270da1069fc1f2499f9a8f60fb8e360, type: 2}
+  - {fileID: 11400000, guid: a9311f009b5e7b24795d724f00c8b256, type: 2}
+  - {fileID: 11400000, guid: c73d63d0986bd064faabef3da72db297, type: 2}
+  - {fileID: 11400000, guid: 7b01eabb3934ca34e809e14a9103fe45, type: 2}
+  - {fileID: 11400000, guid: cfbd80528ad608740ad0439e9044d654, type: 2}
+  - {fileID: 11400000, guid: 77eecb087bc6bbe488f6d2545e7a2c98, type: 2}
+  - {fileID: 11400000, guid: d9973f864c34bee4e8e32133f3705c67, type: 2}
+  - {fileID: 11400000, guid: 3309494a76c9fbf40b74e3bf3ee8e254, type: 2}
+  WordList5:
+  - {fileID: 11400000, guid: a14fa1803f3dcf7498db8553b4bf6489, type: 2}
+  - {fileID: 11400000, guid: bf6623fc5ed404540851e67ec680a06d, type: 2}
+  - {fileID: 11400000, guid: 3e664cc7d8d26ae43ae44db0895c0241, type: 2}
+  - {fileID: 11400000, guid: 4b35d0f02bd5de2429f6000f05710598, type: 2}
+  - {fileID: 11400000, guid: 5cad0ecbeaf0a6342bc808ea37b50246, type: 2}
+  - {fileID: 11400000, guid: 67626ac337c4dd5478c001eb13574446, type: 2}
+  - {fileID: 11400000, guid: c0885a429afec0b4f9d85703b90d911c, type: 2}
+  - {fileID: 11400000, guid: 41806afa823af0e458182278cb2f71ae, type: 2}
+  - {fileID: 11400000, guid: 15cdc7c37379a4141bd5933d534f3eb8, type: 2}
+  - {fileID: 11400000, guid: 3e40fc747bba0a241994e0d8e8d13a72, type: 2}
+  - {fileID: 11400000, guid: ee96b437d44fe824c93feb8e05d94316, type: 2}
+  - {fileID: 11400000, guid: 8599b70bccd31f54cb6b3713c301d014, type: 2}
+  - {fileID: 11400000, guid: 92cc9d34c097fff469f47c9f99cd44ee, type: 2}
+  - {fileID: 11400000, guid: 628d8c71e95951e4e90e2716a95ca4bb, type: 2}
+  - {fileID: 11400000, guid: e44c9ae9b0b9a7e45a06e27226b5d1d9, type: 2}
+  - {fileID: 11400000, guid: ebef2617d9136ba48bcfa0808474d796, type: 2}
+  - {fileID: 11400000, guid: 2c40146ea2df3a44db1882b0786787ce, type: 2}
+  - {fileID: 11400000, guid: 4930e9557ef31344eb9a282808077d5b, type: 2}
+  - {fileID: 11400000, guid: 8727fffd6170b614e8450972850ba6cc, type: 2}
+  - {fileID: 11400000, guid: 8e728b9551eaa7441b5fcf36c67a94cd, type: 2}
+  - {fileID: 11400000, guid: d3a0df3247806314a85b7c8926760416, type: 2}
+  - {fileID: 11400000, guid: 53fdf0960e8fd1240b065fca52db98d7, type: 2}
+  - {fileID: 11400000, guid: 2ce01c0d3da8e534798b73df8ced80e1, type: 2}
+  - {fileID: 11400000, guid: 47eaa89c399ad304fb81d5cf1e11c561, type: 2}
   WordList6:
   - {fileID: 11400000, guid: a99dd11e937ee0a469db4a2557df1f5a, type: 2}
   - {fileID: 11400000, guid: 2ad4c58299e068446abfbc73450c8d95, type: 2}
@@ -1220,6 +1282,26 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1882374770340441893, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
   m_PrefabInstance: {fileID: 1882374769400511053}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1208669549
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208669544}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7f78d994c5a9a82449d649335918c992, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1356396513 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1882374770748460460, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
@@ -1767,6 +1849,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 823284559}
+    - target: {fileID: 1882374769797519029, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
+      propertyPath: m_text
+      value: Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882374769797519029, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: e7d4f0e678049c14291e13e3e5c9aee2, type: 2}
+    - target: {fileID: 1882374769797519029, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882374769797519029, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882374769797519029, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882374769797519029, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2777738200299031574, guid: e7d4f0e678049c14291e13e3e5c9aee2, type: 2}
+    - target: {fileID: 1882374769797519029, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294638330
+      objectReference: {fileID: 0}
     - target: {fileID: 1882374769924504016, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1779,6 +1889,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 823284559}
+    - target: {fileID: 1882374770340441894, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882374770340441894, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 30abdec1d818fb447819df09922a6ec4, type: 3}
+    - target: {fileID: 1882374770340441894, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882374770340441894, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882374770340441894, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1882374770340441895, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
+      propertyPath: m_Transition
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1882374770340441895, guid: 0ce18c072e06fcf459ae8db82f6a9cd9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

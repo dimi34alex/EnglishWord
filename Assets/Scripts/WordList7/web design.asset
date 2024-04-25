@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   word: web design
   translate: "\u0432\u0435\u0431-\u0434\u0438\u0437\u0430\u0439\u043D"
-  theme: 3
-  wordlist: 7
   audio: {fileID: 8300000, guid: ca660685486fca445bd8b86444815d27, type: 3}
   sentences:
   - _____ encompasses the process of creating visually appealing and functional websites
@@ -24,3 +22,4 @@ MonoBehaviour:
     ensuring that the website not only looks good but also provides a seamless user
     experience.
   explonation: The process of creating visually appealing and functional websites.
+  wordList: 7

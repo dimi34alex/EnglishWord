@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
   m_Name: Business intelligence
   m_EditorClassIdentifier: 
-  word: business intelligence
+  word: Business intelligence
   translate: "\u0431\u0438\u0437\u043D\u0435\u0441-\u0430\u043D\u0430\u043B\u0438\u0442\u0438\u043A\u0430"
   audio: {fileID: 8300000, guid: 16757e32f8fc1a9499ce0bc9cf321af0, type: 3}
   sentences:
@@ -22,3 +22,4 @@ MonoBehaviour:
     edge by transforming raw data into meaningful insights and actionable intelligence.
   explonation: The use of data analysis tools and techniques to transform raw data
     into meaningful and actionable insights for making informed business decisions.
+  wordList: 6

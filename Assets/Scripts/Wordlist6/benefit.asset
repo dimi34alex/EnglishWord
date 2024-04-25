@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
   m_Name: benefit
   m_EditorClassIdentifier: 
-  word: a benefit
+  word: benefit
   translate: "\u043F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u043E"
   audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
   sentences:
@@ -22,3 +22,4 @@ MonoBehaviour:
     _____ to safeguard sensitive data and protect against potential threats.
   explonation: A positive outcome or advantage gained from utilizing a particular
     technology, process, or strategy.
+  wordList: 6

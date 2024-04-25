@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
   m_Name: Personalization engines
   m_EditorClassIdentifier: 
-  word: personalization engines
+  word: Personalization engines
   translate: "\u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438"
   audio: {fileID: 8300000, guid: 8e19f098c4a65f74e9b1821b1073d33e, type: 3}
   sentences:
@@ -22,3 +22,4 @@ MonoBehaviour:
     engagement, drive conversions, and foster customer loyalty.
   explonation: Software systems or algorithms that analyze user data to deliver personalized
     content, recommendations, or experiences tailored to individual preferences.
+  wordList: 6

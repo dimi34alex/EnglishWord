@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
   m_Name: Big Data analytics
   m_EditorClassIdentifier: 
-  word: big data analytics
+  word: Big Data analytics
   translate: "\u0430\u043D\u0430\u043B\u0438\u0442\u0438\u043A\u0430 \u0431\u043E\u043B\u044C\u0448\u0438\u0445
     \u0434\u0430\u043D\u043D\u044B\u0445"
   audio: {fileID: 8300000, guid: dd9ef161a1dd8064baa5554acefe8f19, type: 3}
@@ -24,3 +24,4 @@ MonoBehaviour:
     innovation.
   explonation: The process of examining large and complex datasets to uncover hidden
     patterns, correlations, and insights that can inform business decisions and strategies.
+  wordList: 6

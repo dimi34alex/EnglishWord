@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   word: font
   translate: "\u0448\u0440\u0438\u0444\u0442"
-  theme: 3
-  wordlist: 7
   audio: {fileID: 8300000, guid: f871539410ff64b4ba6de6eee1ed7a42, type: 3}
   sentences:
   - Choosing the right _____ is a fundamental aspect of web design, as it directly
@@ -23,3 +21,4 @@ MonoBehaviour:
   - Experimenting with different _____ allows designers to explore creative possibilities
     and tailor the typography to match the tone and style of the website
   explonation: The visual style and presentation of text on a webpage.
+  wordList: 7

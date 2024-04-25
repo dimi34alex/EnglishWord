@@ -23,3 +23,4 @@ MonoBehaviour:
   explonation: The process of copying and distributing data across multiple servers
     or locations to ensure consistency, resilience, and availability, commonly used
     in database management and data storage systems.
+  wordList: 5

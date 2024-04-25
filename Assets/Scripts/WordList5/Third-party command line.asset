@@ -24,3 +24,4 @@ MonoBehaviour:
   explonation: Command-line interface (CLI) tools or utilities developed by external
     vendors or third-party developers, offering additional functionalities or features
     beyond those provided by native or built-in commands.
+  wordList: 5

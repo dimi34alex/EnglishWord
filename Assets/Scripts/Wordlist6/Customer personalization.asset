@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
   m_Name: Customer personalization
   m_EditorClassIdentifier: 
-  word: customer personalization
+  word: Customer personalization
   translate: "\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u044F
     \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432"
   audio: {fileID: 8300000, guid: 3e7da60d001491d4fbd69d1af3f0cb10, type: 3}
@@ -25,3 +25,4 @@ MonoBehaviour:
     recommendations.
   explonation: The use of data analysis tools and techniques to transform raw data
     into meaningful and actionable insights for making informed business decisions.
+  wordList: 6

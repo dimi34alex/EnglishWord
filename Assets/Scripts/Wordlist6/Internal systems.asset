@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
   m_Name: Internal systems
   m_EditorClassIdentifier: 
-  word: internal systems
+  word: Internal systems
   translate: "\u0432\u043D\u0443\u0442\u0440\u0435\u043D\u043D\u0438\u0435 \u0441\u0438\u0441\u0442\u0435\u043C\u044B"
   audio: {fileID: 8300000, guid: d74716131bf572a48bcc3e7dd43b03a1, type: 3}
   sentences:
@@ -24,3 +24,4 @@ MonoBehaviour:
   explonation: ' Information technology infrastructure, software applications, or
     databases that are used within an organization to support its operations and
     business processes.'
+  wordList: 6

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
   m_Name: External sources
   m_EditorClassIdentifier: 
-  word: external sources
+  word: External sources
   translate: "\u0432\u043D\u0435\u0448\u043D\u0438\u0435 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0438"
   audio: {fileID: 8300000, guid: 4fe4a0eda35e4db4489650cc658f730e, type: 3}
   sentences:
@@ -23,3 +23,4 @@ MonoBehaviour:
     of market trends, competitive landscapes, and customer preferences.
   explonation: Data or information obtained from outside the organization, such as
     third-party vendors, public databases, or social media platforms.
+  wordList: 6

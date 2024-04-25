@@ -10,6 +10,7 @@ public class WordSO : ScriptableObject
     public AudioClip audio;
     public List<string> sentences;
     public string explonation;
+    public int wordList;
 
     private void OnEnable()
     {

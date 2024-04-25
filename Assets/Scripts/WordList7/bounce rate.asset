@@ -22,3 +22,4 @@ MonoBehaviour:
   explonation: A metric used to measure the percentage of visitors who navigate away
     from a website after viewing only one page, often indicating the effectiveness
     of the website's content or user experience.
+  wordList: 7

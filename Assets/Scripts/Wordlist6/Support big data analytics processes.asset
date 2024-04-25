@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
   m_Name: Support big data analytics processes
   m_EditorClassIdentifier: 
-  word: support big data analytics processes
+  word: Support big data analytics processes
   translate: "\u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0430 \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0432
     \u0430\u043D\u0430\u043B\u0438\u0442\u0438\u043A\u0438 \u0431\u043E\u043B\u044C\u0448\u0438\u0445
     \u0434\u0430\u043D\u043D\u044B\u0445"
@@ -25,3 +25,4 @@ MonoBehaviour:
     from big data.
   explonation: Refers to the infrastructure, tools, or services that facilitate the
     collection, storage, processing, and analysis of large and complex datasets.
+  wordList: 6

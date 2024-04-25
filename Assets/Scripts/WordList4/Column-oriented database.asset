@@ -24,3 +24,4 @@ MonoBehaviour:
     due to its efficiency in handling large datasets.
   explonation: A database structure where data is stored in columns rather than rows,
     enabling efficient analytical queries and data compression.
+  wordList: 4

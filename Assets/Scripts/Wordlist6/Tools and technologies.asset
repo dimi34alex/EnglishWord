@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
   m_Name: Tools and technologies
   m_EditorClassIdentifier: 
-  word: instruments and technologies
+  word: Tools and technologies
   translate: "\u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u044B
     \u0438 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438"
   audio: {fileID: 8300000, guid: 5ea13acc95d7bcc468a0424f4f7b01ee, type: 3}
@@ -21,3 +21,4 @@ MonoBehaviour:
     streamline processes, and drive innovation.
   explonation: The process of discovering or revealing insights, patterns, or knowledge
     within data through analysis, exploration, or investigation.
+  wordList: 6
