@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: to consider
+  m_EditorClassIdentifier: 
+  word: to consider
+  translate: "\u0443\u0447\u0438\u0442\u044B\u0432\u0430\u0442\u044C"
+  audio: {fileID: 8300000, guid: a449516b17df4a24b9fc3a7bea3d4898, type: 3}
+  sentences:
+  - Before implementing a new technology, it's crucial to _____ its impact on existing
+    systems and processes.
+  - IT leaders must _____ various factors when planning infrastructure upgrades or
+    cloud migrations.
+  explonation: Taking into account various factors when making IT decisions.
+  wordList: 2

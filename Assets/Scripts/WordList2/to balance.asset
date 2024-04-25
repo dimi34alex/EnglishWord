@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: to balance
+  m_EditorClassIdentifier: 
+  word: to balance
+  translate: "\u0431\u0430\u043B\u0430\u043D\u0441\u0438\u0440\u043E\u0432\u0430\u0442\u044C"
+  audio: {fileID: 8300000, guid: 32b5db9eb7f1b7b4ba32f21b32f8979e, type: 3}
+  sentences:
+  - It's important to _____ security measures with user convenience to avoid unnecessary
+    friction in IT systems.
+  - Project managers often need _____ competing priorities to meet deadlines and
+    quality standards.
+  explonation: Finding equilibrium between different priorities or resources.
+  wordList: 2

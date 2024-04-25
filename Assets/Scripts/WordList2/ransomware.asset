@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: ransomware
+  m_EditorClassIdentifier: 
+  word: ransomware
+  translate: "\u0432\u044B\u043C\u043E\u0433\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u043E\u0435
+    \u041F\u041E"
+  audio: {fileID: 8300000, guid: ae8d3c19da504b44fb539bb4aa5bcbbf, type: 3}
+  sentences:
+  - _____ is a type of malware that encrypts data, demanding payment for its release.
+  - Protecting against _____ requires a combination of preventive measures and incident
+    response plans.
+  explonation: This type of malware encrypts data and demands payment for its release.
+  wordList: 2

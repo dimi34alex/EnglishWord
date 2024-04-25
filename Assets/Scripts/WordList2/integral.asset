@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: integral
+  m_EditorClassIdentifier: 
+  word: integral
+  translate: "\u043D\u0435\u043E\u0442\u044A\u0435\u043C\u043B\u0435\u043C\u044B\u0439"
+  audio: {fileID: 8300000, guid: 6cf727c1a4686b443a5c8efe2b319815, type: 3}
+  sentences:
+  - An _____ component of any software system is robust security to protect against
+    threats and vulnerabilities.
+  - Testing is _____ to the software development process, ensuring reliability and
+    quality.
+  explonation: An _____ part of IT infrastructure is robust security to protect against
+    threats.
+  wordList: 2

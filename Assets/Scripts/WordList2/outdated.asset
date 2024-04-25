@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: outdated
+  m_EditorClassIdentifier: 
+  word: outdated
+  translate: "\u0443\u0441\u0442\u0430\u0440\u0435\u0432\u0448\u0438\u0439"
+  audio: {fileID: 8300000, guid: 16367a73f3176724ba0d16af72aed883, type: 3}
+  sentences:
+  - Using _____ software can expose systems to security risks and compatibility issues.
+  - Regular updates are necessary to prevent _____ applications from becoming a liability.
+  explonation: This term describes software or hardware that is no longer supported
+    or secure.
+  wordList: 2
