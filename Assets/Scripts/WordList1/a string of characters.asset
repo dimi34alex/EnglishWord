@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: a string of characters
+  m_EditorClassIdentifier: 
+  word: a string of characters
+  translate: "\u0441\u0442\u0440\u043E\u043A\u0430 \u0441\u0438\u043C\u0432\u043E\u043B\u043E\u0432"
+  audio: {fileID: 8300000, guid: eaa4dc4ea35426043a8f67214d3b2a25, type: 3}
+  sentences:
+  - Encryption keys are typically a random _____ generated to secure sensitive information.
+  - The encryption algorithm converts plaintext into a complex _____ to prevent unauthorized
+    access.
+  explonation: A sequence of letters, numbers, or symbols.
+  wordList: 1

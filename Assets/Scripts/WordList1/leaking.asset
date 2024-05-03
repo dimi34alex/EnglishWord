@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: leaking
+  m_EditorClassIdentifier: 
+  word: leaking
+  translate: "\u0443\u0442\u0435\u0447\u043A\u0430"
+  audio: {fileID: 8300000, guid: fdc5599fd0879e745961568ddaaa406d, type: 3}
+  sentences:
+  - Data encryption prevents the _____ of sensitive information in the event of a
+    security breach.
+  - Organizations face significant repercussions if they fail to prevent data _____
+    or unauthorized access.
+  explonation: Unintentional disclosure or release of confidential information.
+  wordList: 1

@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 
 public class LessonManager : MonoBehaviour
 {
+    public float delayAnswer = 2.5f;
     public AudioManager audioManager;
     public GameObject lessenOver;
     public Slider progress;
+    public GameObject goStartScreen;
     public int currentScore;
     public int plusScore = 10;
     public MenuManager menuManager;
@@ -26,6 +26,7 @@ public class LessonManager : MonoBehaviour
     public List<WordSO> WordList7;
     public List<WordSO> WordList8;
     [SerializeField] private List<Canvas> Lesson;
+    public List<Button> correctAnswerButton;
     public int currentStage;
     public void GenerateLesson(int numberwordList)
     {
@@ -35,6 +36,7 @@ public class LessonManager : MonoBehaviour
         progress.value = 0;
         menuManager.HideCanvas();
         progress.gameObject.SetActive(true);
+        goStartScreen.SetActive(true);
         for (int i = 0; i < stages; i++)
         {
             switch (numberwordList)
@@ -85,30 +87,41 @@ public class LessonManager : MonoBehaviour
         HideCanvas(Lesson);
     }
 
-    public void NextStage(string text, WordSO word)
+    public void NextStage(string text, WordSO word, Button button)
     {
-        currentStage++;
+        
         if (text == word.translate || text == word.word)
         {
             currentScore += plusScore;
             progress.value = currentScore;
+            audioManager.PlayRightAnswerSound();
+            button.GetComponent<Image>().color = Color.green;
             Debug.Log("Правильно!");
         }
         else
         {
+            audioManager.PlayWrongAnswerSound();
+            button.GetComponent<Image>().color = Color.red;
             Debug.Log("Неправильно!");
         }
-        if (currentStage == stages)
+        if (currentStage + 1 == stages)
         {
-            HideCanvas(Lesson);
-            ShowLessenOver();
-            progress.gameObject.SetActive(false);
-            Debug.Log("Урок окончен!");
-            DelLesson();
+            audioManager.PlayEndLessonSound();
+            LessenOver();
             return;
         }
+        correctAnswerButton[currentStage].GetComponent<Image>().color = Color.green;
+        StartCoroutine(Wait());
+        currentStage++;
+    }
+    public void LessenOver()
+    {
         HideCanvas(Lesson);
-        Lesson[currentStage].gameObject.SetActive(true);
+        ShowLessenOver();
+        progress.gameObject.SetActive(false);
+        goStartScreen.SetActive(false);
+        Debug.Log("Урок окончен!");
+        DelLesson();
     }
     private Canvas GenerateTemplate(WordSO word)
     {
@@ -157,16 +170,18 @@ public class LessonManager : MonoBehaviour
             }
             if (child.GetComponent<Button>())
             {
-                buttons.Add(child.GetComponent<Button>());
+                Button button = child.GetComponent<Button>();
+                buttons.Add(button);
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
                 RandomWords(word.wordList, word, text);
-                child.GetComponent<Button>().onClick.AddListener(() => NextStage(text.text, word));
+                button.onClick.AddListener(() => NextStage(text.text, word, button));
             }
         }
         Button rightAnswer = buttons[Random.Range(0, buttons.Count)];
         rightAnswer.GetComponentInChildren<TextMeshProUGUI>().text = word.word;
         rightAnswer.onClick.RemoveAllListeners();
-        rightAnswer.onClick.AddListener(() => NextStage(word.word, word));
+        correctAnswerButton.Add(rightAnswer);
+        rightAnswer.onClick.AddListener(() => NextStage(word.word, word, rightAnswer));
 
         return template;
     }
@@ -184,16 +199,18 @@ public class LessonManager : MonoBehaviour
             }
             if (child.GetComponent<Button>())
             {
-                buttons.Add(child.GetComponent<Button>());
+                Button button = child.GetComponent<Button>();
+                buttons.Add(button);
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
                 RandomWords(word.wordList, word, text);
-                child.GetComponent<Button>().onClick.AddListener(() => NextStage(text.text, word));
+                button.onClick.AddListener(() => NextStage(text.text, word, button));
             }
         }
         Button rightAnswer = buttons[Random.Range(0, buttons.Count)];
         rightAnswer.GetComponentInChildren<TextMeshProUGUI>().text = word.word;
         rightAnswer.onClick.RemoveAllListeners();
-        rightAnswer.onClick.AddListener(() => NextStage(word.word, word));
+        correctAnswerButton.Add(rightAnswer);
+        rightAnswer.onClick.AddListener(() => NextStage(word.word, word, rightAnswer));
 
         return template;
     }
@@ -212,16 +229,18 @@ public class LessonManager : MonoBehaviour
             }
             if (child.GetComponent<Button>())
             {
-                buttons.Add(child.GetComponent<Button>());
+                Button button = child.GetComponent<Button>();
+                buttons.Add(button);
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
                 RandomWords(word.wordList, word, text);
-                child.GetComponent<Button>().onClick.AddListener(() => NextStage(text.text, word));
+                button.onClick.AddListener(() => NextStage(text.text, word, button));
             }
         }
         Button rightAnswer = buttons[Random.Range(0, buttons.Count)];
         rightAnswer.GetComponentInChildren<TextMeshProUGUI>().text = word.word;
         rightAnswer.onClick.RemoveAllListeners();
-        rightAnswer.onClick.AddListener(() => NextStage(word.word, word));
+        correctAnswerButton.Add(rightAnswer);
+        rightAnswer.onClick.AddListener(() => NextStage(word.word, word, rightAnswer));
 
         return template;
     }
@@ -238,16 +257,18 @@ public class LessonManager : MonoBehaviour
             }
             if (child.GetComponent<Button>())
             {
-                buttons.Add(child.GetComponent<Button>());
+                Button button = child.GetComponent<Button>();
+                buttons.Add(button);
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
                 RandomWords(word.wordList, word, text, true);
-                child.GetComponent<Button>().onClick.AddListener(() => NextStage(text.text, word));
+                button.onClick.AddListener(() => NextStage(text.text, word, button));
             }
         }
         Button rightAnswer = buttons[Random.Range(0, buttons.Count)];
         rightAnswer.GetComponentInChildren<TextMeshProUGUI>().text = word.translate;
         rightAnswer.onClick.RemoveAllListeners();
-        rightAnswer.onClick.AddListener(() => NextStage(word.translate, word));
+        correctAnswerButton.Add(rightAnswer);
+        rightAnswer.onClick.AddListener(() => NextStage(word.translate, word, rightAnswer));
 
         return template;
     }
@@ -264,17 +285,19 @@ public class LessonManager : MonoBehaviour
             }
             if (child.GetComponent<Button>())
             {
-                buttons.Add(child.GetComponent<Button>());
+                Button button = child.GetComponent<Button>();
+                buttons.Add(button);
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
                 string translate = WordList7[Random.Range(0, WordList7.Count)].word;
                 RandomWords(word.wordList, word, text);
-                child.GetComponent<Button>().onClick.AddListener(() => NextStage(text.text, word));
+                button.onClick.AddListener(() => NextStage(text.text, word, button));
             }
         }
         Button rightAnswer = buttons[Random.Range(0, buttons.Count)];
         rightAnswer.GetComponentInChildren<TextMeshProUGUI>().text = word.word;
         rightAnswer.onClick.RemoveAllListeners();
-        rightAnswer.onClick.AddListener(() => NextStage(word.word, word));
+        correctAnswerButton.Add(rightAnswer);
+        rightAnswer.onClick.AddListener(() => NextStage(word.word, word, rightAnswer));
 
         return template;
     }
@@ -349,7 +372,7 @@ public class LessonManager : MonoBehaviour
     }
     private WordSO GenerateRandomWord(int wordlist)
     {
-        
+
         WordSO translate;
         switch (wordlist)
         {
@@ -402,4 +425,12 @@ public class LessonManager : MonoBehaviour
         }
         return translate;
     }
+    private IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(2f);
+        HideCanvas(Lesson);
+        Lesson[currentStage].gameObject.SetActive(true);
+    }
 }
+
+

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc70a95966a29ca4eb71214d4e52461b, type: 3}
+  m_Name: to decrypt
+  m_EditorClassIdentifier: 
+  word: to decrypt
+  translate: "\u0440\u0430\u0441\u0448\u0438\u0444\u0440\u043E\u0432\u044B\u0432\u0430\u0442\u044C"
+  audio: {fileID: 8300000, guid: c5759c7a85af9a34db0c8f8b6a2d032f, type: 3}
+  sentences:
+  - Authorized users can _____ encrypted data using the corresponding decryption
+    key to access the original plaintext.
+  - Decrypting sensitive information requires the correct decryption key to _____
+    the ciphertext successfully.
+  explonation: To convert encrypted data back into its original, readable form.
+  wordList: 1
