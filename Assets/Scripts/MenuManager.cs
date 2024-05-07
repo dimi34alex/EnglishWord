@@ -5,6 +5,8 @@ using TMPro;
 public enum Screen
 {
     Start,
+    Settings,
+    Shop,
     ChooseTheme,
     ChooseWordList,
     Lesson
@@ -18,13 +20,14 @@ public enum Theme
 }
 public class MenuManager : MonoBehaviour
 {
-    //создать массив кнопок, чтобы в цикле их включать и выключать
     public TextMeshProUGUI themeText;
     public GameObject canvas;
     public Screen screen;
     public Theme theme;
     public GameObject backButton;
-    public GameObject startButton;
+    public List<GameObject> StartScreen;
+    public List<GameObject> Settings;
+    public List<GameObject> Shop;
     public List<GameObject> themesButtons;
     public List<GameObject> wordListWebDesign;
     public List<GameObject> wordListBigData;
@@ -45,6 +48,12 @@ public class MenuManager : MonoBehaviour
             case Screen.ChooseWordList:
                 ShowChooseThemeScreen();
                 break;
+            case Screen.Settings:
+                ShowStartScreen();
+                break;
+            case Screen.Shop:
+                ShowStartScreen();
+                break;
         }
 
     }
@@ -52,7 +61,7 @@ public class MenuManager : MonoBehaviour
     {
         theme = Theme.BigData;
         themeText.text = "Big Data";
-        
+
     }
     public void ChooseDataSecurityTheme()
     {
@@ -69,10 +78,27 @@ public class MenuManager : MonoBehaviour
         screen = Screen.Start;
         theme = Theme.None;
         HideCanvas();
-        startButton.SetActive(true);
+        ShowButtons(StartScreen);
+    }
+    public void ShowSettingsScreen(){
+        screen = Screen.Settings;
+        theme = Theme.None;
+        HideCanvas();
+        backButton.SetActive(true);
+        ShowButtons(Settings);
+    }
+    public void ShowShopScreen()
+    {
+        screen = Screen.Shop;
+        theme = Theme.None;
+        HideCanvas();
+        backButton.SetActive(true);
+        ShowButtons(Shop);
     }
     public void ShowChooseThemeScreen()
     {
+        themeText.gameObject.SetActive(true);
+        themeText.text = "Choose theme";
         screen = Screen.ChooseTheme;
         HideCanvas();
         backButton.SetActive(true);
@@ -96,6 +122,10 @@ public class MenuManager : MonoBehaviour
                 ShowButtons(wordListDataSecurity, true);
                 break;
         }
+    }
+    public void Exit()
+    {
+        Application.Quit(); 
     }
     private void ShowButtons(List<GameObject> buttons, bool show = true)
     {

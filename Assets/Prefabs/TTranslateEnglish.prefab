@@ -657,7 +657,7 @@ GameObject:
   - component: {fileID: 5221081604361686700}
   - component: {fileID: 6198272669084852748}
   - component: {fileID: 8490894752938323122}
-  - component: {fileID: 8497151059456421293}
+  - component: {fileID: 2281185377739906169}
   m_Layer: 5
   m_Name: Word4
   m_TagString: Untagged
@@ -747,7 +747,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0.7019608, g: 0.8039216, b: 0.84313726, a: 0.54509807}
     m_HighlightedColor: {r: 0.88235295, g: 0.9607843, b: 0.99215686, a: 0.7372549}
-    m_PressedColor: {r: 0.99215686, g: 0.4745098, b: 0.3372549, a: 1}
+    m_PressedColor: {r: 0.5137255, g: 0.63529414, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -768,26 +768,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!95 &8497151059456421293
-Animator:
-  serializedVersion: 4
+--- !u!114 &2281185377739906169
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5387596435080228297}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 74909d1edd63a0449b10f6f6976f15b1, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4dd342211c69f747bec1780f123b34a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orange: {r: 0.9921569, g: 0.47450984, b: 0.3372549, a: 1}
+  pink: {r: 0.9529412, g: 0.3254902, b: 0.6313726, a: 1}
+  blue: {r: 0.3254902, g: 0.52156866, b: 0.9529412, a: 1}
 --- !u!1 &6952013064396309377
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +795,7 @@ GameObject:
   - component: {fileID: 7366238248216333925}
   - component: {fileID: 1809423444304954329}
   - component: {fileID: 1844166677889538339}
+  - component: {fileID: 4153293824933458818}
   m_Layer: 5
   m_Name: Word1
   m_TagString: Untagged
@@ -889,7 +885,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0.7019608, g: 0.80392164, b: 0.8431373, a: 0.54509807}
     m_HighlightedColor: {r: 0.8821645, g: 0.96100193, b: 0.990566, a: 0.7372549}
-    m_PressedColor: {r: 0.9921569, g: 0.47450984, b: 0.3372549, a: 1}
+    m_PressedColor: {r: 0.5137255, g: 0.63529414, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -910,6 +906,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4153293824933458818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6952013064396309377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4dd342211c69f747bec1780f123b34a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orange: {r: 0.9921569, g: 0.47450984, b: 0.3372549, a: 1}
+  pink: {r: 0.9529412, g: 0.3254902, b: 0.6313726, a: 1}
+  blue: {r: 0.3254902, g: 0.52156866, b: 0.9529412, a: 1}
 --- !u!1 &7293627945904209356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,6 +1068,7 @@ GameObject:
   - component: {fileID: 6872136313883871800}
   - component: {fileID: 3906274432102806449}
   - component: {fileID: 8828471467014869220}
+  - component: {fileID: 8134749820336370977}
   m_Layer: 5
   m_Name: Word3
   m_TagString: Untagged
@@ -1146,7 +1158,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0.7019608, g: 0.8039216, b: 0.84313726, a: 0.54509807}
     m_HighlightedColor: {r: 0.88235295, g: 0.9607843, b: 0.99215686, a: 0.7372549}
-    m_PressedColor: {r: 0.99215686, g: 0.4745098, b: 0.3372549, a: 1}
+    m_PressedColor: {r: 0.5137255, g: 0.63529414, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1167,6 +1179,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8134749820336370977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8818832429179738776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4dd342211c69f747bec1780f123b34a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orange: {r: 0.9921569, g: 0.47450984, b: 0.3372549, a: 1}
+  pink: {r: 0.9529412, g: 0.3254902, b: 0.6313726, a: 1}
+  blue: {r: 0.3254902, g: 0.52156866, b: 0.9529412, a: 1}
 --- !u!1 &9222640713607052463
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1206,7 @@ GameObject:
   - component: {fileID: 5530019600866730427}
   - component: {fileID: 2176783207438773576}
   - component: {fileID: 8139954412713499893}
+  - component: {fileID: 5376905823808177562}
   m_Layer: 5
   m_Name: Word2
   m_TagString: Untagged
@@ -1268,7 +1296,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0.7019608, g: 0.8039216, b: 0.84313726, a: 0.54509807}
     m_HighlightedColor: {r: 0.88235295, g: 0.9607843, b: 0.99215686, a: 0.7372549}
-    m_PressedColor: {r: 0.99215686, g: 0.4745098, b: 0.3372549, a: 1}
+    m_PressedColor: {r: 0.5137255, g: 0.63529414, b: 0.6784314, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1289,3 +1317,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5376905823808177562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9222640713607052463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4dd342211c69f747bec1780f123b34a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orange: {r: 0.9921569, g: 0.47450984, b: 0.3372549, a: 1}
+  pink: {r: 0.9529412, g: 0.3254902, b: 0.6313726, a: 1}
+  blue: {r: 0.3254902, g: 0.52156866, b: 0.9529412, a: 1}

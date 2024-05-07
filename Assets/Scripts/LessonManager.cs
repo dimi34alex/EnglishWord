@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class LessonManager : MonoBehaviour
 {
+    public Color colorRight;
+    public Color colorWrong;
     public float delayAnswer = 2.5f;
     public AudioManager audioManager;
     public GameObject lessenOver;
@@ -30,6 +32,7 @@ public class LessonManager : MonoBehaviour
     public int currentStage;
     public void GenerateLesson(int numberwordList)
     {
+        correctAnswerButton.Clear();
         currentStage = 0;
         currentScore = 0;
         progress.maxValue = stages * plusScore;
@@ -87,21 +90,22 @@ public class LessonManager : MonoBehaviour
         HideCanvas(Lesson);
     }
 
-    public void NextStage(string text, WordSO word, Button button)
+    public void NextStage(string text, WordSO word, Button button, List<Button> buttons)
     {
-        
+        progress.value += plusScore;
+        StartCoroutine(Wait());
         if (text == word.translate || text == word.word)
         {
-            currentScore += plusScore;
-            progress.value = currentScore;
+        currentScore += plusScore;
             audioManager.PlayRightAnswerSound();
-            button.GetComponent<Image>().color = Color.green;
+            button.GetComponent<Image>().color = colorRight;
             Debug.Log("Правильно!");
         }
         else
         {
+            correctAnswerButton[currentStage].GetComponent<Image>().color = colorRight;
             audioManager.PlayWrongAnswerSound();
-            button.GetComponent<Image>().color = Color.red;
+            button.GetComponent<Image>().color = colorWrong;
             Debug.Log("Неправильно!");
         }
         if (currentStage + 1 == stages)
@@ -110,12 +114,15 @@ public class LessonManager : MonoBehaviour
             LessenOver();
             return;
         }
-        correctAnswerButton[currentStage].GetComponent<Image>().color = Color.green;
-        StartCoroutine(Wait());
+        foreach (Button button1 in buttons)
+        {
+            button1.interactable = false;
+        }
         currentStage++;
     }
     public void LessenOver()
     {
+        PlayerPrefs.SetInt("money", currentScore);
         HideCanvas(Lesson);
         ShowLessenOver();
         progress.gameObject.SetActive(false);
@@ -159,9 +166,10 @@ public class LessonManager : MonoBehaviour
 
     private Canvas GenerateExplonation(WordSO word)
     {
+        List<Button> buttons = new List<Button>();
         Canvas template = Instantiate(Templates[4]);
         List<string> uniqueTranslates = new List<string>();
-        List<Button> buttons = new List<Button>();
+
         foreach (Transform child in template.transform)
         {
             if (child.name == "Explonation")
@@ -173,24 +181,20 @@ public class LessonManager : MonoBehaviour
                 Button button = child.GetComponent<Button>();
                 buttons.Add(button);
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
-                RandomWords(word.wordList, word, text);
-                button.onClick.AddListener(() => NextStage(text.text, word, button));
+                RandomWords(word.wordList, word, text, uniqueTranslates);
+                button.onClick.AddListener(() => NextStage(text.text, word, button, buttons));
             }
         }
-        Button rightAnswer = buttons[Random.Range(0, buttons.Count)];
-        rightAnswer.GetComponentInChildren<TextMeshProUGUI>().text = word.word;
-        rightAnswer.onClick.RemoveAllListeners();
-        correctAnswerButton.Add(rightAnswer);
-        rightAnswer.onClick.AddListener(() => NextStage(word.word, word, rightAnswer));
-
+        GenerateCorrectWord(buttons, word);
         return template;
     }
 
     private Canvas GenerateSentence(WordSO word)
     {
+        List<Button> buttons = new List<Button>();
+
         Canvas template = Instantiate(Templates[3]);
         List<string> uniqueTranslates = new List<string>();
-        List<Button> buttons = new List<Button>();
         foreach (Transform child in template.transform)
         {
             if (child.name == "Sentences")
@@ -202,24 +206,20 @@ public class LessonManager : MonoBehaviour
                 Button button = child.GetComponent<Button>();
                 buttons.Add(button);
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
-                RandomWords(word.wordList, word, text);
-                button.onClick.AddListener(() => NextStage(text.text, word, button));
+                RandomWords(word.wordList, word, text, uniqueTranslates);
+                button.onClick.AddListener(() => NextStage(text.text, word, button, buttons));
             }
         }
-        Button rightAnswer = buttons[Random.Range(0, buttons.Count)];
-        rightAnswer.GetComponentInChildren<TextMeshProUGUI>().text = word.word;
-        rightAnswer.onClick.RemoveAllListeners();
-        correctAnswerButton.Add(rightAnswer);
-        rightAnswer.onClick.AddListener(() => NextStage(word.word, word, rightAnswer));
-
+        GenerateCorrectWord(buttons, word);
         return template;
     }
 
     private Canvas GenerateAudio(WordSO word)
     {
+        List<Button> buttons = new List<Button>();
+
         List<string> uniqueTranslates = new List<string>();
         Canvas template = Instantiate(Templates[2]);
-        List<Button> buttons = new List<Button>();
         foreach (Transform child in template.transform)
         {
             if (child.name == "Audio")
@@ -232,23 +232,19 @@ public class LessonManager : MonoBehaviour
                 Button button = child.GetComponent<Button>();
                 buttons.Add(button);
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
-                RandomWords(word.wordList, word, text);
-                button.onClick.AddListener(() => NextStage(text.text, word, button));
+                RandomWords(word.wordList, word, text, uniqueTranslates);
+                button.onClick.AddListener(() => NextStage(text.text, word, button, buttons));
             }
         }
-        Button rightAnswer = buttons[Random.Range(0, buttons.Count)];
-        rightAnswer.GetComponentInChildren<TextMeshProUGUI>().text = word.word;
-        rightAnswer.onClick.RemoveAllListeners();
-        correctAnswerButton.Add(rightAnswer);
-        rightAnswer.onClick.AddListener(() => NextStage(word.word, word, rightAnswer));
-
+        GenerateCorrectWord(buttons, word);
         return template;
     }
     private Canvas GenerateTranslateOnRussian(WordSO word)
     {
+        List<Button> buttons = new List<Button>();
+
         List<string> uniqueTranslates = new List<string>();
         Canvas template = Instantiate(Templates[0]);
-        List<Button> buttons = new List<Button>();
         foreach (Transform child in template.transform)
         {
             if (child.name == "Translate")
@@ -260,23 +256,19 @@ public class LessonManager : MonoBehaviour
                 Button button = child.GetComponent<Button>();
                 buttons.Add(button);
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
-                RandomWords(word.wordList, word, text, true);
-                button.onClick.AddListener(() => NextStage(text.text, word, button));
+                RandomWords(word.wordList, word, text, uniqueTranslates, true);
+                button.onClick.AddListener(() => NextStage(text.text, word, button, buttons));
             }
         }
-        Button rightAnswer = buttons[Random.Range(0, buttons.Count)];
-        rightAnswer.GetComponentInChildren<TextMeshProUGUI>().text = word.translate;
-        rightAnswer.onClick.RemoveAllListeners();
-        correctAnswerButton.Add(rightAnswer);
-        rightAnswer.onClick.AddListener(() => NextStage(word.translate, word, rightAnswer));
-
+        GenerateCorrectWord(buttons, word, true);
         return template;
     }
     private Canvas GenerateTranslateOnEnglish(WordSO word)
     {
+        List<Button> buttons = new List<Button>();
+
         List<string> uniqueTranslates = new List<string>();
         Canvas template = Instantiate(Templates[1]);
-        List<Button> buttons = new List<Button>();
         foreach (Transform child in template.transform)
         {
             if (child.name == "Translate")
@@ -289,16 +281,11 @@ public class LessonManager : MonoBehaviour
                 buttons.Add(button);
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
                 string translate = WordList7[Random.Range(0, WordList7.Count)].word;
-                RandomWords(word.wordList, word, text);
-                button.onClick.AddListener(() => NextStage(text.text, word, button));
+                RandomWords(word.wordList, word, text, uniqueTranslates);
+                button.onClick.AddListener(() => NextStage(text.text, word, button, buttons));
             }
         }
-        Button rightAnswer = buttons[Random.Range(0, buttons.Count)];
-        rightAnswer.GetComponentInChildren<TextMeshProUGUI>().text = word.word;
-        rightAnswer.onClick.RemoveAllListeners();
-        correctAnswerButton.Add(rightAnswer);
-        rightAnswer.onClick.AddListener(() => NextStage(word.word, word, rightAnswer));
-
+        GenerateCorrectWord(buttons, word);
         return template;
     }
 
@@ -343,91 +330,105 @@ public class LessonManager : MonoBehaviour
             }
         }
     }
-    private void RandomWords(int wordlist, WordSO word, TextMeshProUGUI text, bool russian = false)
+    private void GenerateCorrectWord(List<Button> buttons, WordSO correctWord, bool russian = false)
     {
-        List<string> uniqueTranslates = new List<string>();
-        string translate;
+
+        Button rightAnswer = buttons[Random.Range(0, buttons.Count)];
         if (russian)
         {
-            translate = GenerateRandomWord(wordlist).translate;
-            while (translate == word.translate || uniqueTranslates.Contains(translate))
+            rightAnswer.GetComponentInChildren<TextMeshProUGUI>().text = correctWord.translate;
+        }
+        else
+        {
+            rightAnswer.GetComponentInChildren<TextMeshProUGUI>().text = correctWord.word;
+        }
+        rightAnswer.onClick.RemoveAllListeners();
+        correctAnswerButton.Add(rightAnswer);
+        rightAnswer.onClick.AddListener(() => NextStage(correctWord.word, correctWord, rightAnswer, buttons));
+    }
+    private void RandomWords(int wordlist, WordSO word, TextMeshProUGUI text, List<string> uniqueTranslates, bool russian = false)
+    {
+        string randomWord;
+        if (russian)
+        {
+            randomWord = GenerateRandomWord(wordlist).translate;
+            while (randomWord == word.translate || uniqueTranslates.Contains(randomWord))
             {
-                translate = GenerateRandomWord(wordlist).translate;
+                randomWord = GenerateRandomWord(wordlist).translate;
             }
         }
         else
         {
-            translate = GenerateRandomWord(wordlist).word;
-            while (translate == word.word || uniqueTranslates.Contains(translate))
+            randomWord = GenerateRandomWord(wordlist).word;
+            while (randomWord == word.word || uniqueTranslates.Contains(randomWord))
             {
-                translate = GenerateRandomWord(wordlist).word;
+                randomWord = GenerateRandomWord(wordlist).word;
             }
         }
 
-        if (!uniqueTranslates.Contains(translate))
+        if (!uniqueTranslates.Contains(randomWord))
         {
-            text.text = translate;
+            text.text = randomWord;
             uniqueTranslates.Add(text.text);
         }
     }
     private WordSO GenerateRandomWord(int wordlist)
     {
-
-        WordSO translate;
+        WordSO randomWord;
         switch (wordlist)
         {
             case 1:
                 {
-                    translate = WordList1[Random.Range(0, WordList1.Count)];
+                    randomWord = WordList1[Random.Range(0, WordList1.Count)];
                     break;
                 }
             case 2:
                 {
-                    translate = WordList2[Random.Range(0, WordList2.Count)];
+                    randomWord = WordList2[Random.Range(0, WordList2.Count)];
                     break;
                 }
             case 3:
                 {
-                    translate = WordList3[Random.Range(0, WordList3.Count)];
+                    randomWord = WordList3[Random.Range(0, WordList3.Count)];
                     break;
                 }
             case 4:
                 {
-                    translate = WordList4[Random.Range(0, WordList4.Count)];
+                    randomWord = WordList4[Random.Range(0, WordList4.Count)];
                     break;
                 }
             case 5:
                 {
-                    translate = WordList5[Random.Range(0, WordList5.Count)];
+                    randomWord = WordList5[Random.Range(0, WordList5.Count)];
                     break;
                 }
             case 6:
                 {
-                    translate = WordList6[Random.Range(0, WordList6.Count)];
+                    randomWord = WordList6[Random.Range(0, WordList6.Count)];
                     break;
                 }
             case 7:
                 {
-                    translate = WordList7[Random.Range(0, WordList7.Count)];
+                    randomWord = WordList7[Random.Range(0, WordList7.Count)];
                     break;
                 }
             case 8:
                 {
-                    translate = WordList8[Random.Range(0, WordList8.Count)];
+                    randomWord = WordList8[Random.Range(0, WordList8.Count)];
                     break;
                 }
             default:
                 {
-                    translate = null;
+                    randomWord = null;
                     break;
                 }
 
         }
-        return translate;
+        return randomWord;
     }
     private IEnumerator Wait()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(delayAnswer);
         HideCanvas(Lesson);
         Lesson[currentStage].gameObject.SetActive(true);
     }

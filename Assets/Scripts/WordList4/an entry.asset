@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   word: an entry
   translate: "\u0437\u0430\u043F\u0438\u0441\u044C"
-  audio: {fileID: 8300000, guid: 8efa1578b54f7de4896b0bc66acd7a4a, type: 3}
+  audio: {fileID: 8300000, guid: b16215506c6e9bf41aff5e3af80f6bdd, type: 3}
   sentences:
   - Adding a new _____ to a database requires an insert operation, which places data
     into the correct location.
