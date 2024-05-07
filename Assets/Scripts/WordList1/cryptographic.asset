@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   word: cryptographic
   translate: "\u043A\u0440\u0438\u043F\u0442\u043E\u0433\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043A\u0438\u0439"
-  audio: {fileID: 8300000, guid: 1777fb84f71d2784fa21029aba49cfdc, type: 3}
+  audio: {fileID: 8300000, guid: 4fb177946f28217448fba71c35f53143, type: 3}
   sentences:
   - _____ techniques are fundamental to safeguarding sensitive information in digital
     communication.

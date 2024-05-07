@@ -122,7 +122,7 @@ public class LessonManager : MonoBehaviour
     }
     public void LessenOver()
     {
-        PlayerPrefs.SetInt("money", currentScore);
+        PlayerPrefs.SetInt("money", PlayerPrefs.GetInt("money") + currentScore);
         HideCanvas(Lesson);
         ShowLessenOver();
         progress.gameObject.SetActive(false);
