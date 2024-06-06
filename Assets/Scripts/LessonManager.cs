@@ -1,9 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
 
 public class LessonManager : MonoBehaviour
 {
@@ -47,41 +48,49 @@ public class LessonManager : MonoBehaviour
                 case 1:
                     {
                         Lesson.Add(GenerateTemplate(WordList1[i]));
+                        PlayerPrefs.SetInt("wordList1", PlayerPrefs.GetInt("wordList1") + 1);
                         break;
                     }
                 case 2:
                     {
                         Lesson.Add(GenerateTemplate(WordList2[i]));
+                        PlayerPrefs.SetInt("wordList2", PlayerPrefs.GetInt("wordList2") + 1);
                         break;
                     }
                 case 3:
                     {
                         Lesson.Add(GenerateTemplate(WordList3[i]));
+                        PlayerPrefs.SetInt("wordList3", PlayerPrefs.GetInt("wordList3") + 1);
                         break;
                     }
                 case 4:
                     {
                         Lesson.Add(GenerateTemplate(WordList4[i]));
+                        PlayerPrefs.SetInt("wordList4", PlayerPrefs.GetInt("wordList4") + 1);
                         break;
                     }
                 case 5:
                     {
                         Lesson.Add(GenerateTemplate(WordList5[i]));
+                        PlayerPrefs.SetInt("wordList5", PlayerPrefs.GetInt("wordList5") + 1);
                         break;
                     }
                 case 6:
                     {
                         Lesson.Add(GenerateTemplate(WordList6[i]));
+                        PlayerPrefs.SetInt("wordList6", PlayerPrefs.GetInt("wordList6") + 1);
                         break;
                     }
                 case 7:
                     {
                         Lesson.Add(GenerateTemplate(WordList7[i]));
+                        PlayerPrefs.SetInt("wordList7", PlayerPrefs.GetInt("wordList7") + 1);
                         break;
                     }
                 case 8:
                     {
                         Lesson.Add(GenerateTemplate(WordList8[i]));
+                        PlayerPrefs.SetInt("wordList8", PlayerPrefs.GetInt("wordList8") + 1);
                         break;
                     }
             }
@@ -96,13 +105,15 @@ public class LessonManager : MonoBehaviour
         StartCoroutine(Wait());
         if (text == word.translate || text == word.word)
         {
-        currentScore += plusScore;
+            PlayerPrefs.SetInt("rightAnswers", PlayerPrefs.GetInt("rightAnswers") + 1);
+            currentScore += plusScore;
             audioManager.PlayRightAnswerSound();
             button.GetComponent<Image>().color = colorRight;
             Debug.Log("Правильно!");
         }
         else
         {
+            PlayerPrefs.SetInt("wrongAnswers", PlayerPrefs.GetInt("wrongAnswers") + 1);
             correctAnswerButton[currentStage].GetComponent<Image>().color = colorRight;
             audioManager.PlayWrongAnswerSound();
             button.GetComponent<Image>().color = colorWrong;
@@ -123,6 +134,8 @@ public class LessonManager : MonoBehaviour
     public void LessenOver()
     {
         PlayerPrefs.SetInt("money", PlayerPrefs.GetInt("money") + currentScore);
+        PlayerPrefs.SetInt("lessonsDone", PlayerPrefs.GetInt("lessonsDone") + 1);
+        PlayerPrefs.SetInt("favoriteWordList", FavoriteWordList());
         HideCanvas(Lesson);
         ShowLessenOver();
         progress.gameObject.SetActive(false);
@@ -132,7 +145,7 @@ public class LessonManager : MonoBehaviour
     }
     private Canvas GenerateTemplate(WordSO word)
     {
-        int templateNumber = Random.Range(0, Templates.Count);
+        int templateNumber = UnityEngine.Random.Range(0, Templates.Count);
         //templateNumber = 4;
         switch (templateNumber)
         {
@@ -199,7 +212,7 @@ public class LessonManager : MonoBehaviour
         {
             if (child.name == "Sentences")
             {
-                child.GetComponent<TextMeshProUGUI>().text = word.sentences[Random.Range(0, word.sentences.Count)];
+                child.GetComponent<TextMeshProUGUI>().text = word.sentences[UnityEngine.Random.Range(0, word.sentences.Count)];
             }
             if (child.GetComponent<Button>())
             {
@@ -280,7 +293,7 @@ public class LessonManager : MonoBehaviour
                 Button button = child.GetComponent<Button>();
                 buttons.Add(button);
                 TextMeshProUGUI text = child.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
-                string translate = WordList7[Random.Range(0, WordList7.Count)].word;
+                string translate = WordList7[UnityEngine.Random.Range(0, WordList7.Count)].word;
                 RandomWords(word.wordList, word, text, uniqueTranslates);
                 button.onClick.AddListener(() => NextStage(text.text, word, button, buttons));
             }
@@ -333,7 +346,7 @@ public class LessonManager : MonoBehaviour
     private void GenerateCorrectWord(List<Button> buttons, WordSO correctWord, bool russian = false)
     {
 
-        Button rightAnswer = buttons[Random.Range(0, buttons.Count)];
+        Button rightAnswer = buttons[UnityEngine.Random.Range(0, buttons.Count)];
         if (russian)
         {
             rightAnswer.GetComponentInChildren<TextMeshProUGUI>().text = correctWord.translate;
@@ -379,42 +392,42 @@ public class LessonManager : MonoBehaviour
         {
             case 1:
                 {
-                    randomWord = WordList1[Random.Range(0, WordList1.Count)];
+                    randomWord = WordList1[UnityEngine.Random.Range(0, WordList1.Count)];
                     break;
                 }
             case 2:
                 {
-                    randomWord = WordList2[Random.Range(0, WordList2.Count)];
+                    randomWord = WordList2[UnityEngine.Random.Range(0, WordList2.Count)];
                     break;
                 }
             case 3:
                 {
-                    randomWord = WordList3[Random.Range(0, WordList3.Count)];
+                    randomWord = WordList3[UnityEngine.Random.Range(0, WordList3.Count)];
                     break;
                 }
             case 4:
                 {
-                    randomWord = WordList4[Random.Range(0, WordList4.Count)];
+                    randomWord = WordList4[UnityEngine.Random.Range(0, WordList4.Count)];
                     break;
                 }
             case 5:
                 {
-                    randomWord = WordList5[Random.Range(0, WordList5.Count)];
+                    randomWord = WordList5[UnityEngine.Random.Range(0, WordList5.Count)];
                     break;
                 }
             case 6:
                 {
-                    randomWord = WordList6[Random.Range(0, WordList6.Count)];
+                    randomWord = WordList6[UnityEngine.Random.Range(0, WordList6.Count)];
                     break;
                 }
             case 7:
                 {
-                    randomWord = WordList7[Random.Range(0, WordList7.Count)];
+                    randomWord = WordList7[UnityEngine.Random.Range(0, WordList7.Count)];
                     break;
                 }
             case 8:
                 {
-                    randomWord = WordList8[Random.Range(0, WordList8.Count)];
+                    randomWord = WordList8[UnityEngine.Random.Range(0, WordList8.Count)];
                     break;
                 }
             default:
@@ -425,6 +438,21 @@ public class LessonManager : MonoBehaviour
 
         }
         return randomWord;
+    }
+
+    private int FavoriteWordList()
+    {
+        int[] wordListes = {PlayerPrefs.GetInt("wordList1", 0),
+         PlayerPrefs.GetInt("wordList2", 0),
+         PlayerPrefs.GetInt("wordList3", 0),
+         PlayerPrefs.GetInt("wordList4", 0),
+         PlayerPrefs.GetInt("wordList5", 0),
+         PlayerPrefs.GetInt("wordList6", 0),
+         PlayerPrefs.GetInt("wordList7", 0),
+         PlayerPrefs.GetInt("wordList8", 0)
+        };
+        return Array.IndexOf(wordListes, wordListes.Max()) + 1;
+
     }
     private IEnumerator Wait()
     {

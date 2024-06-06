@@ -102,7 +102,7 @@ public class ShopManager : MonoBehaviour
         if (PlayerPrefs.GetInt("hasPinkButton") == 1)
         {
             skinColor[1].hasSkin = true;
-            pinkCostText.text = "Sales";
+            pinkCostText.text = "Sold";
             pink.transform.GetChild(0).GetComponentInChildren<TextMeshProUGUI>().text = "Select";
         }
         else
@@ -113,7 +113,7 @@ public class ShopManager : MonoBehaviour
         if (PlayerPrefs.GetInt("hasBlueButton") == 1)
         {
             skinColor[2].hasSkin = true;
-            blueCostText.text = "Sales";
+            blueCostText.text = "Sold";
             blue.transform.GetChild(0).GetComponentInChildren<TextMeshProUGUI>().text = "Select";
         }
         else

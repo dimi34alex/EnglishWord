@@ -9,6 +9,7 @@ public enum Screen
     Shop,
     ChooseTheme,
     ChooseWordList,
+    Statistic,
     Lesson
 }
 public enum Theme
@@ -32,6 +33,7 @@ public class MenuManager : MonoBehaviour
     public List<GameObject> wordListWebDesign;
     public List<GameObject> wordListBigData;
     public List<GameObject> wordListDataSecurity;
+    public List<GameObject> statistic;
 
     void Start()
     {
@@ -52,6 +54,9 @@ public class MenuManager : MonoBehaviour
                 ShowStartScreen();
                 break;
             case Screen.Shop:
+                ShowStartScreen();
+                break;
+            case Screen.Statistic:
                 ShowStartScreen();
                 break;
         }
@@ -80,7 +85,8 @@ public class MenuManager : MonoBehaviour
         HideCanvas();
         ShowButtons(StartScreen);
     }
-    public void ShowSettingsScreen(){
+    public void ShowSettingsScreen()
+    {
         screen = Screen.Settings;
         theme = Theme.None;
         HideCanvas();
@@ -104,6 +110,19 @@ public class MenuManager : MonoBehaviour
         backButton.SetActive(true);
         ShowButtons(themesButtons, true);
     }
+    public void ShowStatisticScreen()
+    {
+        screen = Screen.Shop;
+        theme = Theme.None;
+        HideCanvas();
+        backButton.SetActive(true);
+        ShowButtons(statistic);
+        int lessons = PlayerPrefs.GetInt("lessonsDone", 0);
+        int rightAnswers = PlayerPrefs.GetInt("rightAnswers", 0);
+        int wrongAnswers = PlayerPrefs.GetInt("wrongAnswers", 0);
+        int favoriteWordList = PlayerPrefs.GetInt("favoriteWordList");
+        statistic[0].GetComponent<TextMeshProUGUI>().text = $"Завершено уроков: {lessons}\nПравильных ответов: {rightAnswers}\nНеправильных ответов: {wrongAnswers}\nВсего ответов {wrongAnswers+rightAnswers}\nЛюбимый список слов: {favoriteWordList}";
+    }
     public void ShowChooseWordListScreen()
     {
         screen = Screen.ChooseWordList;
@@ -125,7 +144,7 @@ public class MenuManager : MonoBehaviour
     }
     public void Exit()
     {
-        Application.Quit(); 
+        Application.Quit();
     }
     private void ShowButtons(List<GameObject> buttons, bool show = true)
     {
